@@ -1,0 +1,114 @@
+// base
+* {
+  box-sizing: border-box !important;
+}
+
+body {
+  font-family: Roboto;
+  margin: 0;
+}
+
+// general padding left right
+.location,
+.presentation,
+.howdoesitwork,
+.restaurants,
+.restaurantmenu__title,
+.restaurantmenu__menu,
+.restaurantmenu__order,
+.footer {
+  padding: 5%;
+}
+
+// general padding bottom
+.presentation,
+.howdoesitwork,
+.restaurants {
+  padding-bottom: 4rem;
+}
+
+//style texts
+h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: Shrikhand;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2rem 0.5rem 1rem 0.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1rem;
+  text-decoration: underline 0.15rem $color-tertiary;
+}
+
+strong {
+  font-weight: bold;
+}
+
+// style button
+button {
+  background-color: $color-secondary;
+  background: linear-gradient(
+    to bottom,
+    $color-secondary 0%,
+    $color-primary 100%
+  );
+  border-radius: 3rem;
+  border: none;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.63);
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+//header
+.header {
+  &__logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem 0 1rem 0;
+  }
+}
+
+//footer
+.footer {
+  background-color: $color_background--darker;
+  padding-bottom: 2.5rem;
+
+  &__logo {
+    padding: 0.5rem 0 1rem 0;
+    width: 20%;
+  }
+
+  &__links li {
+    padding: 0.3rem 0;
+  }
+
+  &__links img {
+    width: 10px;
+  }
+
+  &__links a {
+    color: white;
+  }
+
+  &__links a:hover {
+    color: $color-tertiary;
+  }
+}
