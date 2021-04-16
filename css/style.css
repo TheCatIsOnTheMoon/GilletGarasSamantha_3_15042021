@@ -200,21 +200,6 @@ a:visited {
   text-align: center;
 }
 
-.presentation__btn {
-  background-color: #FF79DA;
-  background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
-  border-radius: 3rem;
-  border: none;
-  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.63);
-  color: white;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: bold;
-  width: 50%;
-  padding: 1rem;
-  margin: 1rem auto;
-}
-
 .howdoesitwork__step {
   background-color: #f2f2f2;
   border-radius: 3rem;
@@ -308,10 +293,6 @@ ol li::before {
   box-sizing: border-box !important;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: Roboto;
   margin: 0;
@@ -321,8 +302,11 @@ body {
 .presentation,
 .howdoesitwork,
 .restaurants,
+.restaurantmenu__title,
+.restaurantmenu__menu,
+.restaurantmenu__order,
 .footer {
-  padding: 1.5rem;
+  padding: 5%;
 }
 
 .presentation,
@@ -337,14 +321,43 @@ h1 {
 }
 
 h2 {
+  font-family: Shrikhand;
+  font-size: 2rem;
+}
+
+h3 {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 2rem 0.5rem 1rem 0.5rem;
 }
 
-h3 {
+h4 {
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+h5 {
+  font-size: 1rem;
+  text-decoration: underline 0.15rem #99E2D0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+button {
+  background-color: #FF79DA;
+  background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+  border-radius: 3rem;
+  border: none;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.63);
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 50%;
+  padding: 1rem;
+  margin: 1rem auto;
 }
 
 .header__logo {
@@ -368,6 +381,10 @@ h3 {
   padding: 0.3rem 0;
 }
 
+.footer__links img {
+  width: 10px;
+}
+
 .footer__links a {
   color: white;
 }
@@ -376,8 +393,32 @@ h3 {
   color: #99E2D0;
 }
 
-footer ul img {
-  width: 10px;
+.restaurantmenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurantmenu__illustration img {
+  width: 100%;
+}
+
+.restaurantmenu__title {
+  background-color: white;
+  border-radius: 3rem 3rem 0 0;
+  position: relative;
+  top: -3rem;
+}
+
+.restaurantmenu__title h2 {
+  padding-top: 1rem;
+}
+
+.restaurantmenu__menu li {
+  background-color: white;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
+  border-radius: .7rem;
+  margin: 1rem 0;
+  padding: 1rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */
