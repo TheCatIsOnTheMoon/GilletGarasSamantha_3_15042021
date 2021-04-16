@@ -2,8 +2,9 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$color-tertiary--darker: #22715a;
 
 // background color variables
-$grey: hsl(0, 0%, 85%);
-$grey-lighter: hsl(0, 0%, 95%);
-$grey-darker: hsl(0, 0%, 20%);
+$color_background: hsl(0, 0%, 85%);
+$color_background--lighter: hsl(0, 0%, 95%);
+$color_background--darker: hsl(0, 0%, 20%);
