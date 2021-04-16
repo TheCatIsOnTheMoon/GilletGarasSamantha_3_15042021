@@ -164,56 +164,6 @@ a:visited {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box !important;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: Roboto;
-  margin: 0;
-}
-
-.location,
-.presentation,
-.howdoesitwork,
-.restaurants,
-.footer {
-  padding: 1.5rem;
-}
-
-.presentation,
-.howdoesitwork,
-.restaurants {
-  padding-bottom: 4rem;
-}
-
-h1 {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 2rem 0.5rem 1rem 0.5rem;
-}
-
-h3 {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.header__logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1.5rem 0 1rem 0;
-}
-
 .location {
   background-color: #d9d9d9;
   box-shadow: inset 0 0.2rem 0.3rem -0.2rem rgba(0, 0, 0, 0.6);
@@ -352,6 +302,56 @@ ol li::before {
 .restaurants__figcaption__heart {
   float: right;
   width: 2rem;
+}
+
+* {
+  box-sizing: border-box !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Roboto;
+  margin: 0;
+}
+
+.location,
+.presentation,
+.howdoesitwork,
+.restaurants,
+.footer {
+  padding: 1.5rem;
+}
+
+.presentation,
+.howdoesitwork,
+.restaurants {
+  padding-bottom: 4rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2rem 0.5rem 1rem 0.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.header__logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem 0 1rem 0;
 }
 
 .footer {
