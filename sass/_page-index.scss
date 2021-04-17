@@ -1,0 +1,163 @@
+// input location
+.location {
+  background-color: $color_background;
+  box-shadow: inset 0 0.2rem 0.3rem -0.2rem rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  &__icon {
+    width: 0.8rem;
+  }
+
+  &__input {
+    background-color: $color_background;
+    margin-left: 1rem;
+    padding-top: 0.6rem;
+  }
+}
+
+::placeholder {
+  color: $color_background--darker;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+// section 1 : concept presentation
+.presentation {
+  background-color: $color_background--lighter;
+  display: flex;
+  flex-direction: column;
+
+  &__title,
+  &__explanations {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0.5rem auto;
+  }
+
+  &__explanations {
+    font-size: 1.2rem;
+    margin: 0.5rem auto 2rem auto;
+  }
+}
+
+.presentation__btn {
+  width: 50%;
+  margin: auto;
+}
+
+// section 2 : explanation, how does it work
+.howdoesitwork {
+  &__step {
+    background-color: $color_background--lighter;
+    border-radius: 1.3rem;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    font-weight: bold;
+    padding: 1rem 0 1.5rem 0;
+
+    &__icon {
+      width: 1.5rem;
+      height: 1.5rem;
+      padding-top: 0.5rem;
+      margin: auto 0.6rem auto 0.4rem;
+      position: relative;
+      top: 0.15rem;
+    }
+  }
+
+  &__step + &__step {
+    margin-top: 1rem;
+  }
+}
+
+#howdoesitwork__step3 {
+  background-color: $color-primary--lighter;
+}
+
+// howdoesitwork__list with customs numbers
+ol {
+  counter-reset: orderedlist;
+  position: relative;
+
+  & li::before {
+    counter-increment: orderedlist;
+    content: counter(orderedlist);
+
+    background-color: $color-primary;
+    border-radius: 50%;
+    color: white;
+    font-size: 0.5em;
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 0.3rem;
+
+    position: relative;
+    left: -0.5rem;
+  }
+}
+
+// section 3 : restaurants choices
+.restaurants {
+  background-color: $color_background--lighter;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2em;
+
+  &__card {
+    background-color: white;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    margin: 0.5rem auto;
+    position: relative;
+  }
+
+  &__card:hover {
+  }
+
+  &__photo {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  &__newtag {
+    background-color: $color-tertiary;
+    border-radius: 0.1rem;
+    color: $color-tertiary--darker;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.4rem 0.6rem 0.3rem 0.6rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  &__figcaption {
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    &__text {
+      &__namerestaurant {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    &__like {
+      margin: auto 0;
+      &__heart {
+        width: 1.5rem;
+      }
+    }
+  }
+}
