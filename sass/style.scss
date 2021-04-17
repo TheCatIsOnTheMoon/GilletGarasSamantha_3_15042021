@@ -52,8 +52,7 @@
   }
 
   &__explanations {
-      font-size: 1.2rem;
-    font-weight: 300;
+    font-size: 1.2rem;
     margin: 0.5rem auto 2rem auto;
   }
 }
@@ -65,11 +64,10 @@
 
 // section 2 : explanation, how does it work
 .howdoesitwork {
-
   &__step {
     background-color: $color_background--lighter;
     border-radius: 1.3rem;
-    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
     margin: 0 auto;
     font-weight: bold;
     padding: 1rem 0 1.5rem 0;
@@ -78,15 +76,19 @@
       width: 1.5rem;
       height: 1.5rem;
       padding-top: 0.5rem;
-      margin: auto .6rem auto .4rem;
+      margin: auto 0.6rem auto 0.4rem;
       position: relative;
-      top: .15rem;
+      top: 0.15rem;
     }
   }
 
   &__step + &__step {
     margin-top: 1rem;
   }
+}
+
+#howdoesitwork__step3 {
+  background-color: $color-primary--lighter;
 }
 
 // howdoesitwork__list with customs numbers
@@ -140,8 +142,9 @@ ol {
     background-color: $color-tertiary;
     border-radius: 0.1rem;
     color: $color-tertiary--darker;
-    font-weight: bold;
-    padding: 0.4rem 0.6rem 0.2rem 0.6rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.4rem 0.6rem 0.3rem 0.6rem;
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -149,14 +152,20 @@ ol {
 
   &__figcaption {
     padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
 
-    &__namerestaurant {
-      margin-bottom: 0.5rem;
+    &__text {
+      &__namerestaurant {
+        margin-bottom: 0.5rem;
+      }
     }
 
-    &__heart {
-      float: right;
-      width: 2rem;
+    &__like {
+        margin: auto 0;
+      &__heart {
+        width: 1.5rem;
+      }
     }
   }
 }
