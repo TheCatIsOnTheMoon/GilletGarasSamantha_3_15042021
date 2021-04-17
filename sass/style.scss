@@ -42,15 +42,24 @@
 
   &__title,
   &__explanations {
-    margin: auto;
-    padding: 1rem;
     text-align: center;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    margin: .5rem auto;
+  }
+
+  &__explanations {
+      font-weight: lighter;
+    margin: .7rem auto 2.5rem auto;
   }
 }
 
 .presentation__btn {
     width: 50%;
-    margin: 1rem auto;
+    margin: auto;
 }
 
 // section 2 : explanation, how does it work
