@@ -195,11 +195,6 @@ h1 {
   font-weight: bold;
 }
 
-h2 {
-  font-family: Shrikhand;
-  font-size: 2rem;
-}
-
 h3 {
   font-size: 1.5rem;
   font-weight: bold;
@@ -209,11 +204,6 @@ h3 {
 h4 {
   font-size: 1.2rem;
   font-weight: bold;
-}
-
-h5 {
-  font-size: 1rem;
-  text-decoration: underline 0.15rem #99E2D0;
 }
 
 strong {
@@ -412,6 +402,8 @@ ol li::before {
 .restaurantmenu__title {
   background-color: white;
   border-radius: 3rem 3rem 0 0;
+  font-family: Shrikhand;
+  font-size: 2rem;
   position: absolute;
   bottom: -2rem;
   padding-top: 2rem;
@@ -422,12 +414,37 @@ ol li::before {
   margin-top: 1rem;
 }
 
+.restaurantmenu__menu__mealstep {
+  font-size: 1rem;
+  text-decoration: underline 0.15rem #99E2D0;
+  text-transform: uppercase;
+}
+
 .restaurantmenu__menu li {
   background-color: white;
   box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
-  border-radius: 0.7rem;
+  border-radius: 0.8rem;
   margin: 1rem 0;
-  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.restaurantmenu__menu__dishtext, .restaurantmenu__menu__dishselection {
+  padding: .8rem;
+}
+
+.restaurantmenu__menu__dishselection {
+  background-color: #99E2D0;
+  border-radius: 0 0.8rem 0.8rem 0;
+  width: 10%;
+  display: flex;
+}
+
+.restaurantmenu__menu__dishselection img {
+  width: 1rem;
+  display: inline-block;
+  justify-content: center;
+  align-content: center;
 }
 
 .restaurantmenu__order {

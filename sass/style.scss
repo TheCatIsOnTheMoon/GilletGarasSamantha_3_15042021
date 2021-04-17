@@ -25,6 +25,8 @@
   &__title {
     background-color: white;
     border-radius: 3rem 3rem 0 0;
+    font-family: Shrikhand;
+    font-size: 2rem;
     position: absolute;
     bottom: -2rem;
     padding-top: 2rem;
@@ -35,12 +37,38 @@
   &__menu {
     margin-top: 1rem;
 
+    &__mealstep {
+      font-size: 1rem;
+      text-decoration: underline 0.15rem $color-tertiary;
+      text-transform: uppercase;
+    }
+
     & li {
       background-color: white;
       box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
-      border-radius: 0.7rem;
+      border-radius: 0.8rem;
       margin: 1rem 0;
-      padding: 1rem 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__dishtext,
+    &__dishselection {
+      padding: .8rem;
+    }
+
+    &__dishselection {
+      background-color: $color-tertiary;
+      border-radius: 0 0.8rem 0.8rem 0;
+      width: 10%;
+      display: flex;
+
+      & img {
+        width: 1rem;
+        display: inline-block;
+        justify-content: center;
+        align-content: center;
+      }
     }
   }
 
