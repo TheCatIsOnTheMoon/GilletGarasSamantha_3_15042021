@@ -11,20 +11,20 @@
 // input location
 .location {
   background-color: $color_background;
-  box-shadow: inset 0 .2rem .3rem -.2rem rgba(0, 0, 0, 0.60);
+  box-shadow: inset 0 0.2rem 0.3rem -0.2rem rgba(0, 0, 0, 0.6);
   padding: 1rem;
   display: flex;
   justify-content: center;
   align-content: center;
 
   &__icon {
-    width: .8rem;
+    width: 0.8rem;
   }
 
   &__input {
     background-color: $color_background;
     margin-left: 1rem;
-    padding-top: .6rem;
+    padding-top: 0.6rem;
   }
 }
 
@@ -47,40 +47,40 @@
 
   &__title {
     font-size: 1.8rem;
-    font-weight: bolder;
-    margin: .5rem auto;
+    font-weight: 700;
+    margin: 0.5rem auto;
   }
 
   &__explanations {
-      font-weight: lighter;
-    margin: .7rem auto 2.5rem auto;
+      font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0.5rem auto 2rem auto;
   }
 }
 
 .presentation__btn {
-    width: 50%;
-    margin: auto;
+  width: 50%;
+  margin: auto;
 }
 
 // section 2 : explanation, how does it work
 .howdoesitwork {
+
   &__step {
     background-color: $color_background--lighter;
-    border-radius: 3rem;
+    border-radius: 1.3rem;
     box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
     margin: 0 auto;
-    padding: 1.5rem 0;
     font-weight: bold;
+    padding: 1rem 0 1.5rem 0;
 
     &__icon {
-      width: 1rem;
-      height: 1rem;
-      margin: 0 0.5rem;
-      padding-top: .2rem;
-    }
-
-    &__text {
-        padding: 0 0 .4rem .5rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      padding-top: 0.5rem;
+      margin: auto .6rem auto .4rem;
+      position: relative;
+      top: .15rem;
     }
   }
 
@@ -102,8 +102,8 @@ ol {
     border-radius: 50%;
     color: white;
     font-size: 0.5em;
-    height: 0.2rem;
-    width: 0.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
     padding: 0.3rem;
 
     position: relative;
