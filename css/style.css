@@ -217,6 +217,10 @@ button {
   padding: 1rem;
 }
 
+button:hover {
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.6);
+}
+
 .header__logo {
   display: block;
   margin-left: auto;
@@ -248,99 +252,6 @@ button {
 
 .footer__links a:hover {
   color: #99E2D0;
-}
-
-.restaurantmenu {
-  display: flex;
-  flex-direction: column;
-}
-
-.restaurantmenu__presentation {
-  position: relative;
-}
-
-.restaurantmenu__presentation__illustration img {
-  width: 100%;
-}
-
-.restaurantmenu__presentation__title {
-  background-color: white;
-  border-radius: 3rem 3rem 0 0;
-  font-family: Shrikhand;
-  font-size: 2rem;
-  position: absolute;
-  bottom: 0rem;
-  padding: 2.3rem 2rem 0 1.5rem;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.restaurantmenu__presentation__title__like {
-  width: 2rem;
-}
-
-.restaurantmenu__menu {
-  margin-top: 1rem;
-}
-
-.restaurantmenu__menu__mealstep {
-  font-size: 1rem;
-  text-decoration: underline 0.15rem #99E2D0;
-  text-transform: uppercase;
-}
-
-.restaurantmenu__menu li {
-  background-color: white;
-  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
-  border-radius: 0.8rem;
-  margin: 1rem 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-.restaurantmenu__menu__dish--text, .restaurantmenu__menu__dish--selection {
-  padding: 0.4rem 0.7rem;
-}
-
-.restaurantmenu__menu__dish--text {
-  font-size: 0.8rem;
-  line-height: 1.5rem;
-  flex-grow: 2;
-}
-
-.restaurantmenu__menu__dish--text strong {
-  font-size: 1rem;
-}
-
-.restaurantmenu__menu__dish--price {
-  font-size: 0.9rem;
-  font-weight: bold;
-  text-align: right;
-  display: flex;
-  align-self: flex-end;
-  padding: 0 1rem 0.7rem 0;
-}
-
-.restaurantmenu__menu__dish--selection {
-  background-color: #99E2D0;
-  border-radius: 0 0.8rem 0.8rem 0;
-  width: 13%;
-  display: flex;
-}
-
-.restaurantmenu__menu__dish--selection img {
-  width: 1.1rem;
-  margin: auto;
-}
-
-.restaurantmenu__menu__dish--selection:hover {
-  cursor: pointer;
-}
-
-.restaurantmenu__order {
-  width: 50%;
-  margin: 1rem auto;
 }
 
 .location {
@@ -517,6 +428,99 @@ ol li::before {
 .restaurants__figcaption__like input[type="checkbox"]:checked {
   background-color: #9356DC;
   transition-duration: 200ms;
+}
+
+.restaurantmenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurantmenu__presentation {
+  position: relative;
+}
+
+.restaurantmenu__presentation__illustration img {
+  width: 100%;
+}
+
+.restaurantmenu__presentation__title {
+  background-color: white;
+  border-radius: 3rem 3rem 0 0;
+  font-family: Shrikhand;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 0rem;
+  padding: 2.3rem 2rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.restaurantmenu__presentation__title__like {
+  width: 2rem;
+}
+
+.restaurantmenu__menu {
+  margin-top: 1rem;
+}
+
+.restaurantmenu__menu__mealstep {
+  font-size: 1rem;
+  text-decoration: underline 0.15rem #99E2D0;
+  text-transform: uppercase;
+}
+
+.restaurantmenu__menu li {
+  background-color: white;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.8rem;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.restaurantmenu__menu__dish--text, .restaurantmenu__menu__dish--selection {
+  padding: 0.4rem 0.7rem;
+}
+
+.restaurantmenu__menu__dish--text {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  flex-grow: 2;
+}
+
+.restaurantmenu__menu__dish--text strong {
+  font-size: 1rem;
+}
+
+.restaurantmenu__menu__dish--price {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: right;
+  display: flex;
+  align-self: flex-end;
+  padding: 0 1rem 0.7rem 0;
+}
+
+.restaurantmenu__menu__dish--selection {
+  background-color: #99E2D0;
+  border-radius: 0 0.8rem 0.8rem 0;
+  width: 13%;
+  display: flex;
+}
+
+.restaurantmenu__menu__dish--selection img {
+  width: 1.1rem;
+  margin: auto;
+}
+
+.restaurantmenu__menu__dish--selection:hover {
+  cursor: pointer;
+}
+
+.restaurantmenu__order {
+  width: 50%;
+  margin: 1rem auto;
 }
 
 /*# sourceMappingURL=style.css.map */
