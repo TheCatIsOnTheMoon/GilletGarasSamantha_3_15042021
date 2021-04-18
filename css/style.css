@@ -218,7 +218,9 @@ button {
 }
 
 button:hover {
-  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.6);
+  background: linear-gradient(to bottom, #f995de 0%, #9e70d7 100%);
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.4);
+  transition-duration: 400ms;
 }
 
 .header__logo {

@@ -45,11 +45,11 @@ strong {
 
 // style button
 button {
-  background-color: $color-secondary;
+  background-color: $color_secondary;
   background: linear-gradient(
     to bottom,
-    $color-secondary 0%,
-    $color-primary 100%
+    $color_secondary 0%,
+    $color_primary 100%
   );
   border-radius: 3rem;
   border: none;
@@ -61,7 +61,13 @@ button {
   padding: 1rem;
 
   &:hover {
-    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.6);  
+    background: linear-gradient(
+      to bottom,
+      $color_secondary--light 0%,
+      $color_primary--light 100%
+    );
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.4);
+    transition-duration: 400ms;
   }
 }
 
@@ -98,6 +104,6 @@ button {
   }
 
   &__links a:hover {
-    color: $color-tertiary;
+    color: $color_tertiary;
   }
 }

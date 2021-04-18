@@ -39,7 +39,7 @@
 
     &__mealstep {
       font-size: 1rem;
-      text-decoration: underline 0.15rem $color-tertiary;
+      text-decoration: underline 0.15rem $color_tertiary;
       text-transform: uppercase;
     }
 
@@ -76,7 +76,7 @@
     }
 
     &__dish--selection {
-      background-color: $color-tertiary;
+      background-color: $color_tertiary;
       border-radius: 0 0.8rem 0.8rem 0;
       width: 13%;
       display: flex;

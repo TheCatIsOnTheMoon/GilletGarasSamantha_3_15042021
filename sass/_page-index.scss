@@ -79,7 +79,7 @@
 }
 
 #howdoesitwork__step3 {
-  background-color: $color-primary--lighter;
+  background-color: $color_primary--lighter;
 }
 
 // howdoesitwork__list with customs numbers
@@ -91,7 +91,7 @@ ol {
     counter-increment: orderedlist;
     content: counter(orderedlist);
 
-    background-color: $color-primary;
+    background-color: $color_primary;
     border-radius: 50%;
     color: white;
     font-size: 0.5em;
@@ -132,9 +132,9 @@ ol {
   }
 
   &__newtag {
-    background-color: $color-tertiary;
+    background-color: $color_tertiary;
     border-radius: 0.1rem;
-    color: $color-tertiary--darker;
+    color: $color_tertiary--darker;
     font-size: 0.9rem;
     font-weight: 500;
     padding: 0.4rem 0.6rem 0.3rem 0.6rem;
@@ -169,7 +169,7 @@ ol {
         position: relative;
 
         &:hover {
-          background-color: $color-secondary;
+          background-color: $color_secondary;
           transition-duration: 200ms;
         }
 
@@ -178,7 +178,7 @@ ol {
         }
 
         &:checked {
-          background-color: $color-primary;
+          background-color: $color_primary;
           transition-duration: 200ms;
         }
       }
