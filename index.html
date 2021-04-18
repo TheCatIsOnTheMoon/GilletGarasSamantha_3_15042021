@@ -37,7 +37,7 @@
                 vous convient</h1>
             <p class="presentation__explanations">Découvrez des restaurants d'exeption,<br />
                 sélectionnés par nos soins.</p>
-            <button class="presentation__btn" type="button" name="button">Explorer nos restaurants</button>
+            <button class="presentation__btn" onclick="location.href='#restaurants'" type="button" name="button">Explorer nos restaurants</button>
         </section>
 
         <!-- section 2 : explanation, how does it work -->
@@ -61,7 +61,7 @@
         </section>
 
         <!-- section 3 : restaurants choices -->
-        <section class="restaurants">
+        <section class="restaurants" id="restaurants">
             <h3 class="section__title">Restaurants</h3>
 
             <!-- La palette du goût -->
@@ -75,11 +75,8 @@
                             <p>Ménilmontant</p>
                         </div>
                         <div class="restaurants__figcaption__like">
-                            <img class="restaurants__figcaption__like__heart" src="images\icons\heart-regular.svg" alt="icon-heart">
-                            <!-- <input class="restaurants__figcaption__like__checkbox" type="checkbox" id="restaurants__like" name="like" value="like"> -->
+                            <input class="restaurants__figcaption__like__checkbox" type="checkbox" name="like" value="like">
                         </div>
-
-
                     </figcaption>
                 </figure>
             </a>
@@ -94,6 +91,9 @@
                             <h4 class="restaurants__figcaption__text__namerestaurant">La note enchantée</h4>
                             <p>Charonne</p>
                         </div>
+                        <div class="restaurants__figcaption__like">
+                            <input class="restaurants__figcaption__like__checkbox" type="checkbox" name="like" value="like">
+                        </div>
                     </figcaption>
                 </figure>
             </a>
@@ -107,6 +107,9 @@
                             <h4 class="restaurants__figcaption__text__namerestaurant">À la française</h4>
                             <p>Cité Rouge</p>
                         </div>
+                        <div class="restaurants__figcaption__like">
+                            <input class="restaurants__figcaption__like__checkbox" type="checkbox" name="like" value="like">
+                        </div>
                     </figcaption>
                 </figure>
             </a>
@@ -119,6 +122,9 @@
                         <div class="restaurants__figcaption__text">
                             <h4 class="restaurants__figcaption__text__namerestaurant">Le délice des sens</h4>
                             <p>Folie-Méricourt</p>
+                        </div>
+                        <div class="restaurants__figcaption__like">
+                            <input class="restaurants__figcaption__like__checkbox" type="checkbox" name="like" value="like">
                         </div>
                     </figcaption>
                 </figure>
@@ -143,7 +149,7 @@
                 <a href="#">Mentions légales</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a href="mailto: ohmyfood@example.com">Contact</a>
             </li>
         </ul>
     </footer>
