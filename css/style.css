@@ -457,6 +457,7 @@ ol li::before {
 
 .restaurants__card:hover {
   transform: scale(1.01);
+  transition-duration: 200ms;
 }
 
 .restaurants__photo {
@@ -506,6 +507,7 @@ ol li::before {
 
 .restaurants__figcaption__like input[type="checkbox"]:hover {
   background-color: #FF79DA;
+  transition-duration: 200ms;
 }
 
 .restaurants__figcaption__like input[type="checkbox"]:focus {
@@ -514,6 +516,7 @@ ol li::before {
 
 .restaurants__figcaption__like input[type="checkbox"]:checked {
   background-color: #9356DC;
+  transition-duration: 200ms;
 }
 
 /*# sourceMappingURL=style.css.map */

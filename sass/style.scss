@@ -130,6 +130,7 @@ ol {
 
     &:hover {
       transform: scale(1.01);
+      transition-duration: 200ms;
     }
   }
 
@@ -179,6 +180,7 @@ ol {
 
         &:hover {
           background-color: $color-secondary;
+          transition-duration: 200ms;
         }
 
         &:focus {
@@ -187,6 +189,7 @@ ol {
 
         &:checked {
           background-color: $color-primary;
+          transition-duration: 200ms;
         }
       }
     }
