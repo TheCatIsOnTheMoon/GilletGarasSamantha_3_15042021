@@ -4,7 +4,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -68,6 +68,36 @@ button {
     );
     box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.4);
     transition-duration: 400ms;
+  }
+}
+
+//checkbox
+.restaurants__figcaption__like,
+.restaurantmenu__presentation__title__like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & input[type="checkbox"] {
+    height: 2rem;
+    width: 2rem;
+    background-color: $color_background;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      background-color: $color_secondary;
+      transition-duration: 200ms;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:checked {
+      background-color: $color_primary;
+      transition-duration: 200ms;
+    }
   }
 }
 

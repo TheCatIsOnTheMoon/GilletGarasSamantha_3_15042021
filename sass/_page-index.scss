@@ -155,33 +155,5 @@ ol {
         margin-bottom: 0.5rem;
       }
     }
-
-    &__like {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      & input[type="checkbox"] {
-        height: 2rem;
-        width: 2rem;
-        background-color: $color_background;
-        cursor: pointer;
-        position: relative;
-
-        &:hover {
-          background-color: $color_secondary;
-          transition-duration: 200ms;
-        }
-
-        &:focus {
-          outline: none;
-        }
-
-        &:checked {
-          background-color: $color_primary;
-          transition-duration: 200ms;
-        }
-      }
-    }
   }
 }

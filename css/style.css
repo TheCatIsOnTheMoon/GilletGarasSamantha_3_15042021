@@ -223,6 +223,39 @@ button:hover {
   transition-duration: 400ms;
 }
 
+.restaurants__figcaption__like,
+.restaurantmenu__presentation__title__like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.restaurants__figcaption__like input[type="checkbox"],
+.restaurantmenu__presentation__title__like input[type="checkbox"] {
+  height: 2rem;
+  width: 2rem;
+  background-color: #d9d9d9;
+  cursor: pointer;
+  position: relative;
+}
+
+.restaurants__figcaption__like input[type="checkbox"]:hover,
+.restaurantmenu__presentation__title__like input[type="checkbox"]:hover {
+  background-color: #FF79DA;
+  transition-duration: 200ms;
+}
+
+.restaurants__figcaption__like input[type="checkbox"]:focus,
+.restaurantmenu__presentation__title__like input[type="checkbox"]:focus {
+  outline: none;
+}
+
+.restaurants__figcaption__like input[type="checkbox"]:checked,
+.restaurantmenu__presentation__title__like input[type="checkbox"]:checked {
+  background-color: #9356DC;
+  transition-duration: 200ms;
+}
+
 .header__logo {
   display: block;
   margin-left: auto;
@@ -404,34 +437,6 @@ ol li::before {
   margin-bottom: 0.5rem;
 }
 
-.restaurants__figcaption__like {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.restaurants__figcaption__like input[type="checkbox"] {
-  height: 2rem;
-  width: 2rem;
-  background-color: #d9d9d9;
-  cursor: pointer;
-  position: relative;
-}
-
-.restaurants__figcaption__like input[type="checkbox"]:hover {
-  background-color: #FF79DA;
-  transition-duration: 200ms;
-}
-
-.restaurants__figcaption__like input[type="checkbox"]:focus {
-  outline: none;
-}
-
-.restaurants__figcaption__like input[type="checkbox"]:checked {
-  background-color: #9356DC;
-  transition-duration: 200ms;
-}
-
 .restaurantmenu {
   display: flex;
   flex-direction: column;
@@ -479,6 +484,7 @@ ol li::before {
   margin: 1rem 0;
   display: flex;
   justify-content: space-between;
+  cursor: default;
 }
 
 .restaurantmenu__menu__dish--text, .restaurantmenu__menu__dish--selection {
