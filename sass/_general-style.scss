@@ -40,12 +40,9 @@ padding: 5%;
 // general padding bottom
 .presentation,
 .howdoesitwork,
-.restaurants {
+.restaurants,
+.restaurantmenu__order {
   padding-bottom: 4rem;
-}
-
-strong {
-  font-weight: bold;
 }
 
 // style button
@@ -129,6 +126,7 @@ strong {
   &__logo {
     font-family: Shrikhand;
     color: white;
+    padding-bottom: 1rem;
   }
 
   &__links li {

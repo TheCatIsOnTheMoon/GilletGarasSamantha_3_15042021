@@ -203,12 +203,9 @@ body {
 
 .presentation,
 .howdoesitwork,
-.restaurants {
+.restaurants,
+.restaurantmenu__order {
   padding-bottom: 4rem;
-}
-
-strong {
-  font-weight: bold;
 }
 
 .presentation__btn,
@@ -282,6 +279,7 @@ strong {
 .footer__logo {
   font-family: Shrikhand;
   color: white;
+  padding-bottom: 1rem;
 }
 
 .footer__links li {
@@ -475,31 +473,39 @@ strong {
   text-transform: uppercase;
 }
 
-.restaurantmenu__menu li {
+.restaurantmenu__menu__order {
+  width: 50%;
+  margin: 1rem auto;
+}
+
+.menu__dish {
   background-color: white;
   box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
   border-radius: 0.8rem;
-  margin: 1rem 0;
   display: flex;
-  justify-content: space-between;
   cursor: default;
+  margin: 1rem auto;
 }
 
-.restaurantmenu__menu__dish--text, .restaurantmenu__menu__dish--selection {
+.menu__dish--text, .menu__dish--selection {
   padding: 0.4rem 0.7rem;
 }
 
-.restaurantmenu__menu__dish--text {
+.menu__dish--text {
   font-size: 0.8rem;
   line-height: 1.5rem;
-  flex-grow: 2;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
-.restaurantmenu__menu__dish--text strong {
+.menu__dish--text strong {
+  font-weight: bold;
   font-size: 1rem;
 }
 
-.restaurantmenu__menu__dish--price {
+.menu__dish--price {
   font-size: 0.9rem;
   font-weight: bold;
   text-align: right;
@@ -508,25 +514,20 @@ strong {
   padding: 0 1rem 0.7rem 0;
 }
 
-.restaurantmenu__menu__dish--selection {
+.menu__dish--selection {
   background-color: #99E2D0;
   border-radius: 0 0.8rem 0.8rem 0;
   width: 13%;
   display: flex;
 }
 
-.restaurantmenu__menu__dish--selection img {
+.menu__dish--selection img {
   width: 1.1rem;
   margin: auto;
 }
 
-.restaurantmenu__menu__dish--selection:hover {
+.menu__dish--selection:hover {
   cursor: pointer;
-}
-
-.restaurantmenu__order {
-  width: 50%;
-  margin: 1rem auto;
 }
 
 /*# sourceMappingURL=style.css.map */

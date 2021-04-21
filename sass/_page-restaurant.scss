@@ -6,32 +6,31 @@
   // restaurant presentation
 
   &__presentation {
-      position: relative;
+    position: relative;
 
-      &__illustration {
-        & img {
-          width: 100%;
-        }
-      }
-
-      &__title {
-        background-color: white;
-        border-radius: 3rem 3rem 0 0;
-        font-family: Shrikhand;
-        font-size: 2rem;
-        position: absolute;
-        bottom: 0rem;
-        padding: 2.3rem 2rem 0 1.5rem;
+    &__illustration {
+      & img {
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-
-        &__like {
-          width: 2rem;
-        }
       }
-  }
+    }
 
+    &__title {
+      background-color: white;
+      border-radius: 3rem 3rem 0 0;
+      font-family: Shrikhand;
+      font-size: 2rem;
+      position: absolute;
+      bottom: 0rem;
+      padding: 2.3rem 2rem 0 1.5rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      &__like {
+        width: 2rem;
+      }
+    }
+  }
 
   // restaurant menu
   &__menu {
@@ -43,31 +42,47 @@
       text-transform: uppercase;
     }
 
-    & li {
-      background-color: white;
-      box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
-      border-radius: 0.8rem;
-      margin: 1rem 0;
-      display: flex;
-      justify-content: space-between;
-      cursor: default;
+    // restaurant order
+    &__order {
+      width: 50%;
+      margin: 1rem auto;
     }
+  }
+}
 
-    &__dish--text,
-    &__dish--selection {
+//menu
+.menu {
+
+  &__dish {
+    background-color: white;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
+    border-radius: 0.8rem;
+    display: flex;
+    cursor: default;
+    margin: 1rem auto;
+
+    &--text,
+    &--selection {
       padding: 0.4rem 0.7rem;
     }
 
-    &__dish--text {
+    &--text {
       font-size: 0.8rem;
       line-height: 1.5rem;
-      flex-grow: 2;
+
+      // for transforming into dots (...)
+      width: 100%;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+
       & strong {
+        font-weight: bold;
         font-size: 1rem;
       }
     }
 
-    &__dish--price {
+    &--price {
       font-size: 0.9rem;
       font-weight: bold;
       text-align: right;
@@ -76,7 +91,7 @@
       padding: 0 1rem 0.7rem 0;
     }
 
-    &__dish--selection {
+    &--selection {
       background-color: $color_tertiary;
       border-radius: 0 0.8rem 0.8rem 0;
       width: 13%;
@@ -91,11 +106,5 @@
         cursor: pointer;
       }
     }
-  }
-
-  // restaurant order
-  &__order {
-    width: 50%;
-    margin: 1rem auto;
   }
 }
