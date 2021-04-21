@@ -22,11 +22,11 @@ body {
 .restaurantmenu__menu,
 .restaurantmenu__order,
 .footer {
-display: flex;
-justify-content: center;
-align-content: center;
-width:100%;
-padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  padding: 5%;
 }
 
 .presentation,
@@ -34,7 +34,7 @@ padding: 5%;
 .restaurants,
 .restaurantmenu__menu,
 .footer {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 // general padding bottom
@@ -64,9 +64,10 @@ padding: 5%;
   font-size: 1rem;
 
   margin: auto;
-  padding: 1rem .5rem;
+  padding: 1rem 0.5rem;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: linear-gradient(
       to bottom,
       $color_secondary--light 0%,
@@ -74,36 +75,31 @@ padding: 5%;
     );
     box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.4);
     transition-duration: 400ms;
+    outline: none;
   }
 }
 
 //heart checkboxes
 .restaurants__figcaption__like,
 .restaurantmenu__presentation__title__like {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  & input[type="checkbox"] {
+  & > input {
+    appearance: none;
     height: 2rem;
     width: 2rem;
-    background-color: $color_background;
+    border: 1px solid lightGrey;
+    outline: none;
     cursor: pointer;
-    position: relative;
+  }
 
-    &:hover {
-      background-color: $color_secondary;
-      transition-duration: 200ms;
-    }
-
-    &:focus {
-      outline: none;
-    }
-
-    &:checked {
-      background-color: $color_primary;
-      transition-duration: 200ms;
-    }
+  & > input:checked,
+  & > input:hover {
+    border: 1px solid lightGrey;
+    background: linear-gradient(
+      to bottom,
+      $color_primary 0%,
+      $color_secondary 100%
+  );
   }
 }
 
@@ -112,9 +108,9 @@ padding: 5%;
   &__logo {
     font-family: Shrikhand;
     font-size: 2rem;
-    margin: .5rem 0;
-    width:100%;
-    text-align:center;
+    margin: 0.5rem 0;
+    width: 100%;
+    text-align: center;
   }
 }
 

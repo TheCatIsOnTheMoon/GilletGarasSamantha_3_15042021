@@ -107,10 +107,6 @@
     margin: 0.5rem auto;
     position: relative;
 
-    &:hover {
-      transform: scale(1.01);
-      transition-duration: 200ms;
-    }
   }
 
   &__photo {

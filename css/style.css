@@ -220,53 +220,40 @@ body {
   white-space: nowrap;
   font-size: 1rem;
   margin: auto;
-  padding: 1rem .5rem;
+  padding: 1rem 0.5rem;
 }
 
-.presentation__btn:hover,
-.restaurantmenu__order__btn:hover {
+.presentation__btn:hover, .presentation__btn:focus,
+.restaurantmenu__order__btn:hover,
+.restaurantmenu__order__btn:focus {
   background: linear-gradient(to bottom, #f995de 0%, #9e70d7 100%);
   box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.4);
   transition-duration: 400ms;
-}
-
-.restaurants__figcaption__like,
-.restaurantmenu__presentation__title__like {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.restaurants__figcaption__like input[type="checkbox"],
-.restaurantmenu__presentation__title__like input[type="checkbox"] {
-  height: 2rem;
-  width: 2rem;
-  background-color: #d9d9d9;
-  cursor: pointer;
-  position: relative;
-}
-
-.restaurants__figcaption__like input[type="checkbox"]:hover,
-.restaurantmenu__presentation__title__like input[type="checkbox"]:hover {
-  background-color: #FF79DA;
-  transition-duration: 200ms;
-}
-
-.restaurants__figcaption__like input[type="checkbox"]:focus,
-.restaurantmenu__presentation__title__like input[type="checkbox"]:focus {
   outline: none;
 }
 
-.restaurants__figcaption__like input[type="checkbox"]:checked,
-.restaurantmenu__presentation__title__like input[type="checkbox"]:checked {
-  background-color: #9356DC;
-  transition-duration: 200ms;
+.restaurants__figcaption__like > input,
+.restaurantmenu__presentation__title__like > input {
+  appearance: none;
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid lightGrey;
+  outline: none;
+  cursor: pointer;
+}
+
+.restaurants__figcaption__like > input:checked,
+.restaurants__figcaption__like > input:hover,
+.restaurantmenu__presentation__title__like > input:checked,
+.restaurantmenu__presentation__title__like > input:hover {
+  border: 1px solid lightGrey;
+  background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
 }
 
 .header__logo {
   font-family: Shrikhand;
   font-size: 2rem;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   width: 100%;
   text-align: center;
 }
@@ -395,11 +382,6 @@ body {
   border-radius: 1rem;
   margin: 0.5rem auto;
   position: relative;
-}
-
-.restaurants__card:hover {
-  transform: scale(1.01);
-  transition-duration: 200ms;
 }
 
 .restaurants__photo {
