@@ -220,9 +220,10 @@ body {
   color: white;
   cursor: pointer;
   white-space: nowrap;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
   margin: auto;
-  padding: 1rem 0.5rem;
+  padding: 0.9rem 1rem;
 }
 
 .presentation__btn:hover, .presentation__btn:focus,
@@ -255,7 +256,7 @@ body {
 .header__logo {
   font-family: Shrikhand;
   font-size: 2rem;
-  margin: 1rem 0 2rem 0;
+  padding: 1.5rem 0 1rem 0;
   width: 100%;
   text-align: center;
 }
@@ -268,7 +269,7 @@ body {
 .footer__logo {
   font-family: Shrikhand;
   color: white;
-  padding-bottom: 1rem;
+  padding: .7rem 0 1rem 0;
 }
 
 .footer__links li {
@@ -276,11 +277,17 @@ body {
 }
 
 .footer__links img {
-  width: 10px;
+  width: .7rem;
+  height: .9rem;
+  margin-right: .3rem;
+  position: relative;
+  top: .2rem;
 }
 
 .footer__links a {
   color: white;
+  font-size: .8rem;
+  font-weight: 400;
 }
 
 .footer__links a:hover {
@@ -298,8 +305,8 @@ page-index-----------------------------------------------
 }
 
 .location__entry__icon {
-  width: 0.8rem;
-  margin-left: 2rem;
+  width: 0.7rem;
+  margin-left: 1.5rem;
 }
 
 .location__entry__input {
@@ -310,7 +317,7 @@ page-index-----------------------------------------------
 ::placeholder {
   color: #333333;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: .9rem;
 }
 
 .presentation {
@@ -322,20 +329,20 @@ page-index-----------------------------------------------
 }
 
 .presentation__title {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin: 0.5rem auto;
 }
 
 .presentation__explanations {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0.5rem auto 2rem auto;
 }
 
 .section__title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 900;
-  margin: 2rem 0rem 1.5rem 0rem;
+  margin: 2rem 0rem 1rem 0rem;
 }
 
 .howdoesitwork__step {
@@ -353,12 +360,13 @@ page-index-----------------------------------------------
   background-color: #9356DC;
   border-radius: 50%;
   color: white;
-  font-size: 0.5em;
-  height: 1rem;
-  width: 1rem;
-  padding: 0.32rem;
+  font-size: 0.6em;
+  height: 1.3rem;
+  width: 1.3rem;
+  text-align: center;
+  padding-top: .4rem;
   position: relative;
-  left: 1rem;
+  left: -.6rem;
 }
 
 .howdoesitwork__step__icon {
@@ -371,10 +379,10 @@ page-index-----------------------------------------------
 }
 
 .howdoesitwork__step + .howdoesitwork__step {
-  margin-top: 1rem;
+  margin-top: 1.3rem;
 }
 
-#howdoesitwork__step3 {
+.howdoesitwork__step:hover {
   background-color: rgba(144, 88, 218, 0.1);
 }
 
@@ -385,7 +393,7 @@ page-index-----------------------------------------------
 
 .restaurants__card {
   background-color: white;
-  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
   margin: 0.5rem auto;
   position: relative;
@@ -402,7 +410,7 @@ page-index-----------------------------------------------
   background-color: #99E2D0;
   border-radius: 0.1rem;
   color: #219175;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   font-weight: 500;
   padding: 0.4rem 0.6rem 0.3rem 0.6rem;
   position: absolute;
@@ -411,14 +419,18 @@ page-index-----------------------------------------------
 }
 
 .restaurants__figcaption {
-  padding: 1rem 1rem;
+  padding: .8rem;
   display: flex;
   justify-content: space-between;
 }
 
+.restaurants__figcaption__text {
+  font-size: .9rem;
+}
+
 .restaurants__figcaption__text__namerestaurant {
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 900;
   margin-bottom: 0.5rem;
 }
 
