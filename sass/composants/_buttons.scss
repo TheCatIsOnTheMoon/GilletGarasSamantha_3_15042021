@@ -1,0 +1,35 @@
+// style button
+.presentation__btn,
+.restaurantmenu__order__btn {
+  background-color: $color_secondary;
+  background: linear-gradient(
+    to bottom,
+    $color_secondary 0%,
+    $color_primary 100%
+  );
+
+  border-radius: 3rem;
+  border: none;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
+  color: white;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  min-width: 50%;
+  margin: 0 auto;
+  padding: 0.9rem 1rem;
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(
+      to bottom,
+      $color_secondary--light 0%,
+      $color_primary--light 100%
+    );
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.4);
+    transition-duration: 400ms;
+    outline: none;
+  }
+}

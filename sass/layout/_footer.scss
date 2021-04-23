@@ -1,0 +1,35 @@
+//footer
+.footer {
+  @include flex-centercontent;
+  @include flex-column;
+  background-color: $color_background--darker;
+  padding-bottom: 2.5rem;
+
+  &__logo {
+    font-family: Shrikhand;
+    color: white;
+    padding: 0.7rem 0 1rem 0;
+  }
+
+  &__links li {
+    padding: 0.3rem 0;
+  }
+
+  &__links img {
+    width: 0.7rem;
+    height: 0.9rem;
+    margin-right: 0.3rem;
+    position: relative;
+    top: 0.2rem;
+  }
+
+  &__links a {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  &__links a:hover {
+    color: $color_tertiary;
+  }
+}

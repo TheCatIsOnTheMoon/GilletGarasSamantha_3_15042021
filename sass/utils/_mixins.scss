@@ -1,0 +1,20 @@
+@mixin flex-centercontent{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    padding: 5%;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin general-paddingbottom {
+    padding-bottom: 3rem;
+}
+
+@mixin box-shadow {
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+}

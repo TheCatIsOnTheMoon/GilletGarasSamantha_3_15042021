@@ -5,6 +5,7 @@ page-restaurant------------------------------------------
 */
 
 .restaurantmenu {
+  @include flex-column;
   background-color: $color_background--lighter;
 
   // restaurant presentation
@@ -18,6 +19,7 @@ page-restaurant------------------------------------------
     }
 
     &__title {
+      @include flex-centercontent;
       background-color: $color_background--lighter;
       border-radius: 2rem 2rem 0 0;
       font-family: Shrikhand;
@@ -33,11 +35,13 @@ page-restaurant------------------------------------------
 
   // restaurant menu
   &__menu {
+    @include flex-centercontent;
+    @include flex-column;
     margin-top: 1rem;
 
     &__mealstep {
       font-size: 0.9rem;
-      margin: 0 0 .4rem 0;
+      margin: 0 0 0.4rem 0;
       text-transform: uppercase;
       position: relative;
 
@@ -46,14 +50,14 @@ page-restaurant------------------------------------------
         position: absolute;
         left: 0;
         top: 1.2rem;
-        height: .15rem;
+        height: 0.15rem;
         width: 2.2rem;
         background-color: $color_tertiary;
       }
     }
 
     &__mealstep ~ .restaurantmenu__menu__mealstep {
-        margin-top: 2rem;
+      margin-top: 2rem;
     }
   }
 }
@@ -62,11 +66,11 @@ page-restaurant------------------------------------------
 .menu {
   &__dish {
     background-color: white;
-    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
+    @include box-shadow;
     border-radius: 0.8rem;
     display: flex;
     cursor: default;
-    margin: .8rem auto;
+    margin: 0.8rem auto;
 
     &--text,
     &--selection {
@@ -114,4 +118,9 @@ page-restaurant------------------------------------------
       }
     }
   }
+}
+
+.restaurantmenu__order {
+  @include flex-centercontent;
+  @include general-paddingbottom;
 }
