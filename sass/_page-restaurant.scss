@@ -5,11 +5,9 @@ page-restaurant------------------------------------------
 */
 
 .restaurantmenu {
-  display: flex;
-  flex-direction: column;
+  background-color: $color_background--lighter;
 
   // restaurant presentation
-
   &__presentation {
     position: relative;
 
@@ -20,20 +18,16 @@ page-restaurant------------------------------------------
     }
 
     &__title {
-      background-color: white;
-      border-radius: 3rem 3rem 0 0;
+      background-color: $color_background--lighter;
+      border-radius: 2rem 2rem 0 0;
       font-family: Shrikhand;
-      font-size: 2rem;
+      font-size: 1.5rem;
       position: absolute;
-      bottom: 0rem;
-      padding: 2.3rem 2rem 0 1.5rem;
+      bottom: -1.5rem;
+      padding: 2rem 1.5rem 0 1.5rem;
       width: 100%;
       display: flex;
       justify-content: space-between;
-
-      &__like {
-        width: 2rem;
-      }
     }
   }
 
@@ -42,38 +36,46 @@ page-restaurant------------------------------------------
     margin-top: 1rem;
 
     &__mealstep {
-      font-size: 1rem;
-      text-decoration: underline 0.15rem $color_tertiary;
+      font-size: 0.9rem;
+      margin: 0 0 .4rem 0;
       text-transform: uppercase;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 1.2rem;
+        height: .15rem;
+        width: 2.2rem;
+        background-color: $color_tertiary;
+      }
     }
 
-    // restaurant order
-    &__order {
-      width: 50%;
-      margin: 1rem auto;
+    &__mealstep ~ .restaurantmenu__menu__mealstep {
+        margin-top: 2rem;
     }
   }
 }
 
 //menu
 .menu {
-
   &__dish {
     background-color: white;
-    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
     border-radius: 0.8rem;
     display: flex;
     cursor: default;
-    margin: 1rem auto;
+    margin: .8rem auto;
 
     &--text,
     &--selection {
-      padding: 0.4rem 0.7rem;
+      padding: 0.5rem 0.7rem;
     }
 
     &--text {
-      font-size: 0.8rem;
-      line-height: 1.5rem;
+      font-size: 0.75rem;
+      line-height: 1.2rem;
 
       // for transforming into dots (...)
       width: 100%;
@@ -83,12 +85,12 @@ page-restaurant------------------------------------------
 
       & strong {
         font-weight: bold;
-        font-size: 1rem;
+        font-size: 0.9rem;
       }
     }
 
     &--price {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       font-weight: bold;
       text-align: right;
       display: flex;
@@ -99,7 +101,7 @@ page-restaurant------------------------------------------
     &--selection {
       background-color: $color_tertiary;
       border-radius: 0 0.8rem 0.8rem 0;
-      width: 13%;
+      width: 20%;
       display: flex;
 
       & img {

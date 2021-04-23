@@ -37,9 +37,11 @@ body {
 .presentation,
 .howdoesitwork,
 .restaurants,
+.restaurantmenu,
 .restaurantmenu__menu,
 .footer {
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 // general padding bottom
@@ -67,9 +69,10 @@ body {
   cursor: pointer;
   white-space: nowrap;
   font-size: 0.8rem;
-  font-weight: bold;
+  font-weight: 600;
 
-  margin: auto;
+  min-width: 50%;
+  margin: 0 auto;
   padding: 0.9rem 1rem;
 
   &:hover,
