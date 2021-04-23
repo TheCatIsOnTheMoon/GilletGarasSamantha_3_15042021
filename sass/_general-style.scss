@@ -1,4 +1,9 @@
-// base
+/*
+
+Base-----------------------------------------------------
+
+*/
+
 * {
   box-sizing: border-box !important;
 }
@@ -42,7 +47,7 @@ body {
 .howdoesitwork,
 .restaurants,
 .restaurantmenu__order {
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
 }
 
 // style button
@@ -108,7 +113,7 @@ body {
   &__logo {
     font-family: Shrikhand;
     font-size: 2rem;
-    margin: 0.5rem 0;
+    margin: 1rem 0 2rem 0;
     width: 100%;
     text-align: center;
   }
