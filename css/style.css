@@ -238,23 +238,11 @@ body {
   outline: none;
 }
 
-.restaurants__figcaption__like > input,
-.restaurantmenu__presentation__title__like > input {
-  appearance: none;
-  height: 1rem;
-  width: 1rem;
-  border: 1px solid lightGrey;
-  outline: none;
+.restaurants__figcaption__like,
+.restaurantmenu__presentation__title__like {
+  width: 1.3rem;
+  margin: .3rem .5rem 0 0;
   cursor: pointer;
-  transform: rotate(45deg);
-}
-
-.restaurants__figcaption__like > input:checked,
-.restaurants__figcaption__like > input:hover,
-.restaurantmenu__presentation__title__like > input:checked,
-.restaurantmenu__presentation__title__like > input:hover {
-  border: 1px solid lightGrey;
-  background: linear-gradient(120deg, #9356DC 0%, #FF79DA 100%);
 }
 
 .header__logo {
