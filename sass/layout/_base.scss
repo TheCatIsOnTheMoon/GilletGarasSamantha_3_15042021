@@ -14,6 +14,6 @@ body {
 }
 
 main {
-    -webkit-animation: start-fadein 2s;
-    animation: start-fadein 2s;
+    -webkit-animation: start-fadein 2s ease-in-out;
+    animation: start-fadein 2s ease-in-out;
 }
