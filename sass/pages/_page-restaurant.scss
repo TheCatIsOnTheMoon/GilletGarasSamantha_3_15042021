@@ -28,8 +28,12 @@ page-restaurant------------------------------------------
       bottom: -1.5rem;
       padding: 2rem 1.5rem 0 1.5rem;
       width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
     }
   }
 
@@ -68,6 +72,8 @@ page-restaurant------------------------------------------
     background-color: white;
     @include box-shadow;
     border-radius: 0.8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     cursor: default;
     margin: 0.8rem auto;
@@ -84,7 +90,8 @@ page-restaurant------------------------------------------
       // for transforming into dots (...)
       width: 100%;
       white-space: nowrap;
-      text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;
       overflow: hidden;
 
       & strong {
@@ -97,8 +104,11 @@ page-restaurant------------------------------------------
       font-size: 0.8rem;
       font-weight: bold;
       text-align: right;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
       padding: 0 1rem 0.7rem 0;
     }
 
@@ -106,6 +116,8 @@ page-restaurant------------------------------------------
       background-color: $color_tertiary;
       border-radius: 0 0.8rem 0.8rem 0;
       width: 20%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
 
       & img {
