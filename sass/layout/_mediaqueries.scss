@@ -1,0 +1,107 @@
+@media (min-width: 768px) {
+  // page-index
+  .location,
+  .presentation,
+  .howdoesitwork,
+  .restaurants,
+  .footer {
+    padding: 2rem;
+  }
+
+  .presentation {
+
+    &__box {
+
+    }
+
+    &__btn {
+
+    }
+  }
+
+  .howdoesitwork {
+      & ul {
+        margin: 0 auto;
+        width: auto;
+
+        & li {
+            padding-right: 2rem;
+        }
+      }
+      padding-top: 1rem;
+      padding-bottom: 3rem;
+  }
+
+  #howdoesitwork__step1 {
+      position: relative;
+      left: -10rem;
+  }
+
+  #howdoesitwork__step3 {
+      position: relative;
+      left: 10rem;
+  }
+
+  .restaurants__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .restaurants {
+      padding-bottom: 6rem;
+    & a {
+      width: 23%;
+    }
+
+    &__card {
+      height: 17rem;
+    }
+  }
+
+  // page-restaurant
+  .restaurantmenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-shadow: inset 0 0.2rem 0.3rem -0.2rem rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0.2rem 0.3rem -0.2rem rgba(0, 0, 0, 0.4);
+
+    &__presentation {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+      width: 100%;
+      padding-top: 7.7%;
+      padding-left:2rem;
+
+      & img {
+        border-radius: 0 0 2rem 2rem;
+      }
+
+      &__title {
+        background-color: white;
+        position: relative;
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}
