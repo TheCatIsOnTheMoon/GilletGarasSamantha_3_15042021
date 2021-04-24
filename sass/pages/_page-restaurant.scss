@@ -134,6 +134,6 @@ page-restaurant------------------------------------------
 
 .restaurantmenu__order {
   @include flex-centercontent;
-  @include general-paddingbottom;
   padding-top: 4rem;
+  padding-bottom: 6rem;
 }

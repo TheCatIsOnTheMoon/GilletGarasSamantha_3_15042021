@@ -160,6 +160,65 @@ a:visited {
   text-decoration: none;
 }
 
+.presentation__btn,
+.restaurantmenu__order__btn {
+  background-color: #FF79DA;
+  background: -o-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+  border-radius: 3rem;
+  border: none;
+  -webkit-box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
+  color: white;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 0.8rem;
+  font-weight: 600;
+  width: 13rem;
+  margin: 0 auto;
+  padding: 0.9rem 1rem;
+}
+
+.presentation__btn:hover, .presentation__btn:focus,
+.restaurantmenu__order__btn:hover,
+.restaurantmenu__order__btn:focus {
+  background: -o-linear-gradient(top, #f995de 0%, #9e70d7 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f995de), to(#9e70d7));
+  background: linear-gradient(to bottom, #f995de 0%, #9e70d7 100%);
+  -webkit-box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: 400ms;
+  -o-transition-duration: 400ms;
+  transition-duration: 400ms;
+  outline: none;
+}
+
+.restaurants__figcaption__like,
+.restaurantmenu__presentation__title__like {
+  width: 1.3rem;
+  margin: .3rem .5rem 0 0;
+  cursor: pointer;
+}
+
+@-webkit-keyframes start-fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes start-fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box !important;
   box-sizing: border-box !important;
@@ -173,6 +232,11 @@ body {
   font-family: Roboto;
   font-weight: 300;
   margin: 0;
+}
+
+main {
+  -webkit-animation: start-fadein 2s;
+  animation: start-fadein 2s;
 }
 
 .header__logo {
@@ -323,7 +387,7 @@ page-index-----------------------------------------------
 .presentation__title {
   font-size: 1.5rem;
   font-weight: 700;
-  margin: 0.5rem auto;
+  margin: 0.5rem auto 1rem auto;
 }
 
 .presentation__explanations {
@@ -640,52 +704,11 @@ page-restaurant------------------------------------------
   align-content: center;
   width: 100%;
   padding: 5%;
-  padding-bottom: 3rem;
   padding-top: 4rem;
+  padding-bottom: 6rem;
 }
 
-.presentation__btn,
-.restaurantmenu__order__btn {
-  background-color: #FF79DA;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: -o-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
-  background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
-  border-radius: 3rem;
-  border: none;
-  -webkit-box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
-  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
-  color: white;
-  cursor: pointer;
-  white-space: nowrap;
-  font-size: 0.8rem;
-  font-weight: 600;
-  min-width: 50%;
-  margin: 0 auto;
-  padding: 0.9rem 1rem;
-}
-
-.presentation__btn:hover, .presentation__btn:focus,
-.restaurantmenu__order__btn:hover,
-.restaurantmenu__order__btn:focus {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f995de), to(#9e70d7));
-  background: -o-linear-gradient(top, #f995de 0%, #9e70d7 100%);
-  background: linear-gradient(to bottom, #f995de 0%, #9e70d7 100%);
-  -webkit-box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.4);
-  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.4);
-  -webkit-transition-duration: 400ms;
-  -o-transition-duration: 400ms;
-  transition-duration: 400ms;
-  outline: none;
-}
-
-.restaurants__figcaption__like,
-.restaurantmenu__presentation__title__like {
-  width: 1.3rem;
-  margin: .3rem .5rem 0 0;
-  cursor: pointer;
-}
-
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .location,
   .presentation,
   .howdoesitwork,
@@ -755,17 +778,28 @@ page-restaurant------------------------------------------
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
+    -webkit-box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
     width: 100%;
-    padding-top: 7.7%;
-    padding-left: 2rem;
+    border-radius: 2rem 2rem 2rem 2rem;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    padding: 0;
   }
-  .restaurantmenu__presentation img {
+  .restaurantmenu__presentation__illustration img {
     border-radius: 0 0 2rem 2rem;
+    position: relative;
+    bottom: -0.15rem;
   }
   .restaurantmenu__presentation__title {
     background-color: white;
     position: relative;
-    padding-bottom: 1rem;
+    top: 0;
+    padding-bottom: 2rem;
+  }
+  .restaurantmenu__menu {
+    margin-top: 4rem;
+    padding-top: 0;
   }
 }
 

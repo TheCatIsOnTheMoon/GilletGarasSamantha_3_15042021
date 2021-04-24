@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   // page-index
   .location,
   .presentation,
@@ -10,36 +10,30 @@
 
   .presentation {
 
-    &__box {
-
-    }
-
-    &__btn {
-
-    }
   }
 
   .howdoesitwork {
-      & ul {
-        margin: 0 auto;
-        width: auto;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
 
-        & li {
-            padding-right: 2rem;
-        }
+    & ul {
+      margin: 0 auto;
+      width: auto;
+
+      & li {
+        padding-right: 2rem;
       }
-      padding-top: 1rem;
-      padding-bottom: 3rem;
+    }
   }
 
   #howdoesitwork__step1 {
-      position: relative;
-      left: -10rem;
+    position: relative;
+    left: -10rem;
   }
 
   #howdoesitwork__step3 {
-      position: relative;
-      left: 10rem;
+    position: relative;
+    left: 10rem;
   }
 
   .restaurants__box {
@@ -56,7 +50,7 @@
   }
 
   .restaurants {
-      padding-bottom: 6rem;
+    padding-bottom: 6rem;
     & a {
       width: 23%;
     }
@@ -89,19 +83,32 @@
       -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
       flex-direction: column-reverse;
-      width: 100%;
-      padding-top: 7.7%;
-      padding-left:2rem;
 
-      & img {
+      @include box-shadow;
+
+      width: 100%;
+      border-radius: 2rem 2rem 2rem 2rem;
+      margin-top: 4rem;
+      margin-left: 2rem;
+      padding: 0;
+
+      &__illustration img {
         border-radius: 0 0 2rem 2rem;
+        position: relative;
+        bottom: -0.15rem;
       }
 
       &__title {
         background-color: white;
         position: relative;
-        padding-bottom: 1rem;
+        top: 0;
+        padding-bottom: 2rem;
       }
+    }
+
+    &__menu {
+      margin-top: 4rem;
+      padding-top: 0;
     }
   }
 }

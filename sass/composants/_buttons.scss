@@ -2,16 +2,16 @@
 .presentation__btn,
 .restaurantmenu__order__btn {
   background-color: $color_secondary;
+  background: -o-linear-gradient(
+    top,
+    $color_secondary 0%,
+    $color_primary 100%
+  );
   background: -webkit-gradient(
     linear,
     left top, left bottom,
     from($color_secondary),
     to($color_primary)
-  );
-  background: -o-linear-gradient(
-    top,
-    $color_secondary 0%,
-    $color_primary 100%
   );
   background: linear-gradient(
     to bottom,
@@ -29,22 +29,22 @@
   font-size: 0.8rem;
   font-weight: 600;
 
-  min-width: 50%;
+  width: 13rem;
   margin: 0 auto;
   padding: 0.9rem 1rem;
 
   &:hover,
   &:focus {
+    background: -o-linear-gradient(
+      top,
+      $color_secondary--light 0%,
+      $color_primary--light 100%
+    );
     background: -webkit-gradient(
       linear,
       left top, left bottom,
       from($color_secondary--light),
       to($color_primary--light)
-    );
-    background: -o-linear-gradient(
-      top,
-      $color_secondary--light 0%,
-      $color_primary--light 100%
     );
     background: linear-gradient(
       to bottom,

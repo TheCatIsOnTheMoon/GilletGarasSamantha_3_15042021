@@ -12,3 +12,8 @@ body {
   font-weight: 300;
   margin: 0;
 }
+
+main {
+    -webkit-animation: start-fadein 2s;
+    animation: start-fadein 2s;
+}
