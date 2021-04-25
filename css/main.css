@@ -194,6 +194,35 @@ a:visited {
   outline: none;
 }
 
+.restaurants__figcaption__like,
+.restaurantmenu__presentation__title__like {
+  position: relative;
+  width: 2rem;
+  margin: .3rem .5rem 0 0;
+  cursor: pointer;
+}
+
+.restaurants__figcaption__like__emptyheart,
+.restaurantmenu__presentation__title__like__emptyheart {
+  width: 1.5rem;
+  position: absolute;
+}
+
+.restaurants__figcaption__like__fullheart,
+.restaurantmenu__presentation__title__like__fullheart {
+  width: 1.5rem;
+  position: absolute;
+  opacity: 0;
+}
+
+.restaurants__figcaption__like__fullheart:hover,
+.restaurantmenu__presentation__title__like__fullheart:hover {
+  opacity: 1;
+  -webkit-transition: 300ms ease-in-out;
+  -o-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
 .loader {
   position: absolute;
   top: 50%;
@@ -287,22 +316,6 @@ a:visited {
   to {
     opacity: 1;
   }
-}
-
-.restaurants__figcaption__like,
-.restaurantmenu__presentation__title__like {
-  position: relative;
-  cursor: pointer;
-}
-
-.restaurants__figcaption__like__emptyheart,
-.restaurantmenu__presentation__title__like__emptyheart {
-  position: absolute;
-}
-
-.restaurants__figcaption__like__fullheart,
-.restaurantmenu__presentation__title__like__fullheart {
-  position: absolute;
 }
 
 .menu__dish:hover > .menu__dish--selection {
@@ -661,11 +674,6 @@ page-index-----------------------------------------------
   font-size: 1rem;
   font-weight: 900;
   margin-bottom: 0.5rem;
-}
-
-.restaurants__figcaption__like {
-  width: 1.3rem;
-  margin: .3rem .5rem 0 0;
 }
 
 /*
