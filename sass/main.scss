@@ -5,7 +5,9 @@ CSS ohmyfood - compiled scss
 */
 
 @import "base/_cssreset.scss";
+@import "base/_base";
 
+@import "utils/_functions";
 @import "utils/_variables";
 @import "utils/_mixins";
 
@@ -13,7 +15,6 @@ CSS ohmyfood - compiled scss
 @import "composants/_checkboxes";
 @import "composants/_animations";
 
-@import "layout/_base";
 @import "layout/_header";
 @import "layout/_footer";
 

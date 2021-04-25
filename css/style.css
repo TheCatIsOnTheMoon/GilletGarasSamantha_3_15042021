@@ -160,6 +160,76 @@ a:visited {
   text-decoration: none;
 }
 
+* {
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Roboto;
+  font-weight: 300;
+  margin: 0;
+}
+
+.content {
+  -webkit-animation: start-fadein 600ms ease-in-out;
+  animation: start-fadein 600ms ease-in-out;
+}
+
+.myClass img:nth-child(1n) {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.myClass img:nth-child(2n) {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.myClass img:nth-child(3n) {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.myClass img:nth-child(4n) {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.myClass img:nth-child(5n) {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+.myClass img:nth-child(6n) {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.myClass img:nth-child(7n) {
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
+
+.myClass img:nth-child(8n) {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+.myClass img:nth-child(9n) {
+  -webkit-animation-delay: 4.5s;
+  animation-delay: 4.5s;
+}
+
+.myClass img:nth-child(10n) {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
 .presentation__btn,
 .restaurantmenu__order__btn {
   background-color: #FF79DA;
@@ -236,8 +306,8 @@ a:visited {
   width: 10rem;
   height: 10rem;
   opacity: 0;
-  -webkit-animation: spin-loader 600ms ease-in-out;
-  animation: spin-loader 600ms ease-in-out;
+  -webkit-animation: spin-loader 800ms ease-in-out;
+  animation: spin-loader 800ms ease-in-out;
 }
 
 @-webkit-keyframes spin-loader {
@@ -258,7 +328,7 @@ a:visited {
   }
 }
 
-@-webkit-keyframes spin {
+@-webkit-keyframes spin-loader {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -276,7 +346,7 @@ a:visited {
   }
 }
 
-@keyframes spin {
+@keyframes spin-loader {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -352,26 +422,6 @@ a:visited {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
-}
-
-* {
-  -webkit-box-sizing: border-box !important;
-  box-sizing: border-box !important;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: Roboto;
-  font-weight: 300;
-  margin: 0;
-}
-
-.content {
-  -webkit-animation: start-fadein 600ms ease-in-out;
-  animation: start-fadein 600ms ease-in-out;
 }
 
 .header__logo {
