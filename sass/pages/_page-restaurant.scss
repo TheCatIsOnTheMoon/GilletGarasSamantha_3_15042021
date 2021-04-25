@@ -34,6 +34,11 @@ page-restaurant------------------------------------------
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
+
+      &__like {
+        width: 1.3rem;
+        margin: 0rem 0.5rem 0 0;
+      }
     }
   }
 

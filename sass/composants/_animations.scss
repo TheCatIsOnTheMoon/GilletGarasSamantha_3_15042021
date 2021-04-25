@@ -101,6 +101,20 @@
 
 //restaurants pages - progressive dish fadein
 
+//heart like
+.restaurants__figcaption__like,
+.restaurantmenu__presentation__title__like {
+    position: relative;
+    cursor: pointer;
+
+    &__emptyheart {
+        position: absolute;
+    }
+
+    &__fullheart {
+        position: absolute;
+    }
+}
 
 
 // restaurants pages - tick box grow

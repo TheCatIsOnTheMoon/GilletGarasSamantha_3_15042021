@@ -148,7 +148,7 @@ page-index-----------------------------------------------
     background-color: white;
     @include box-shadow;
     border-radius: 1rem;
-    margin: 0.5rem auto;
+    margin: 1.5rem auto;
     position: relative;
   }
 
@@ -188,6 +188,11 @@ page-index-----------------------------------------------
         font-weight: 900;
         margin-bottom: 0.5rem;
       }
+    }
+
+    &__like {
+        width: 1.3rem;
+        margin: .3rem .5rem 0 0;
     }
   }
 }
