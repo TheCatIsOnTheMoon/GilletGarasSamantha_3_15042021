@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box !important;
-          box-sizing: border-box !important;
+  box-sizing: border-box !important;
 }
 
 html {
@@ -13,7 +13,7 @@ body {
   margin: 0;
 }
 
-main {
-    -webkit-animation: start-fadein 2s ease-in-out;
-    animation: start-fadein 2s ease-in-out;
+.content {
+  -webkit-animation: start-fadein 3s ease-in-out;
+  animation: start-fadein 3s ease-in-out;
 }

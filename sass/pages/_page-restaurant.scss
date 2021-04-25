@@ -32,8 +32,8 @@ page-restaurant------------------------------------------
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
     }
   }
 
@@ -91,7 +91,7 @@ page-restaurant------------------------------------------
       width: 100%;
       white-space: nowrap;
       -o-text-overflow: ellipsis;
-         text-overflow: ellipsis;
+      text-overflow: ellipsis;
       overflow: hidden;
 
       & strong {
@@ -108,7 +108,7 @@ page-restaurant------------------------------------------
       display: -ms-flexbox;
       display: flex;
       -ms-flex-item-align: end;
-          align-self: flex-end;
+      align-self: flex-end;
       padding: 0 1rem 0.7rem 0;
     }
 
