@@ -214,8 +214,8 @@ a:visited {
   width: 10rem;
   height: 10rem;
   opacity: 0;
-  -webkit-animation: spin-loader 300ms ease-in-out;
-  animation: spin-loader 300ms ease-in-out;
+  -webkit-animation: spin-loader 600ms ease-in-out;
+  animation: spin-loader 600ms ease-in-out;
 }
 
 @-webkit-keyframes spin-loader {
@@ -348,8 +348,8 @@ body {
 }
 
 .content {
-  -webkit-animation: start-fadein 3s ease-in-out;
-  animation: start-fadein 3s ease-in-out;
+  -webkit-animation: start-fadein 600ms ease-in-out;
+  animation: start-fadein 600ms ease-in-out;
 }
 
 .header__logo {
