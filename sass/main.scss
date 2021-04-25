@@ -1,17 +1,23 @@
+/*
+
+CSS ohmyfood - compiled scss
+
+*/
+
 @import "base/_cssreset.scss";
 
-@import "utils/variables";
-@import "utils/mixins";
+@import "utils/_variables";
+@import "utils/_mixins";
 
-@import "composants/buttons";
-@import "composants/checkboxes";
-@import "composants/animations";
+@import "composants/_buttons";
+@import "composants/_checkboxes";
+@import "composants/_animations";
 
-@import "layout/base";
-@import "layout/header";
-@import "layout/footer";
+@import "layout/_base";
+@import "layout/_header";
+@import "layout/_footer";
 
-@import "pages/page-index";
-@import "pages/page-restaurant";
+@import "pages/_page-index";
+@import "pages/_page-restaurant";
 
-@import "layout/mediaqueries";
+@import "layout/_mediaqueries";

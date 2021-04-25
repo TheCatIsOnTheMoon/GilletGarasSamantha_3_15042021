@@ -1,6 +1,6 @@
 /*
 
-CSS Reset------------------------------------------------
+CSS ohmyfood - compiled scss
 
 */
 a,
@@ -433,11 +433,6 @@ body {
   color: #99E2D0;
 }
 
-/*
-
-page-index-----------------------------------------------
-
-*/
 .location {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -676,11 +671,6 @@ page-index-----------------------------------------------
   margin-bottom: 0.5rem;
 }
 
-/*
-
-page-restaurant------------------------------------------
-
-*/
 header a {
   width: 1.5rem;
   position: absolute;
@@ -966,4 +956,4 @@ header a {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */
