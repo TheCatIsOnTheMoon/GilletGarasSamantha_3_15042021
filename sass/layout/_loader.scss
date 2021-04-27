@@ -1,26 +1,19 @@
-#loading {
+#content {
+  animation: fade-in 3s ease-in;
+}
+
+#loading__spinner {
+  //vertically & horizontally centered
   position: absolute;
-  background-color: $color_background--darker;
-  z-index: -999;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
 
-  animation: fade-out 3s ease-in;
+  & img {
+    width: 5rem;
+    height: 5rem;
+    opacity: 0;
 
-  &__spinner {
-    //vertically & horizontally centered
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate3d(-50%, -50%, 0);
-
-    & img {
-      width: 5rem;
-      height: 5rem;
-      opacity: 0;
-
-      animation: pulse 2s ease-in-out;
-    }
+    animation: pulse 3s ease-in-out;
   }
 }

@@ -1,7 +1,5 @@
 /*
-
 CSS ohmyfood - compiled scss
-
 */
 a,
 abbr,
@@ -288,20 +286,6 @@ body {
   transition: 400ms ease-in-out;
 }
 
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-    z-index: 999;
-  }
-  99% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    z-index: -999;
-  }
-}
-
 @keyframes pulse {
   0% {
     transform: scale3d(1, 1, 1);
@@ -310,14 +294,15 @@ body {
   10% {
     transform: scale3d(1.5, 1.5, 1.5);
   }
-  20% {
+  25% {
     transform: scale3d(1, 1, 1);
   }
-  30% {
+  35% {
     transform: scale3d(1.5, 1.5, 1.5);
   }
-  40% {
+  50% {
     transform: scale3d(1, 1, 1);
+    opacity: 0.5;
   }
   100% {
     transform: scale3d(0, 0, 0);
@@ -354,14 +339,8 @@ body {
   }
 }
 
-#loading {
-  position: absolute;
-  background-color: #333333;
-  z-index: -999;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  animation: fade-out 3s ease-in;
+#content {
+  animation: fade-in 3s ease-in;
 }
 
 #loading__spinner {
@@ -375,7 +354,7 @@ body {
   width: 5rem;
   height: 5rem;
   opacity: 0;
-  animation: pulse 2s ease-in-out;
+  animation: pulse 3s ease-in-out;
 }
 
 .header__logo {
