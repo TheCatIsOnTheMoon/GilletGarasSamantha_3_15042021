@@ -90,6 +90,9 @@ header a {
     display: flex;
     margin: 0.8rem auto;
 
+    // animation link to a function in _functions.scss
+    animation: load 1s ease-in-out;
+
     cursor: pointer;
 
     &--text,
