@@ -1,9 +1,0 @@
-// load for restaurant page dishes
-
-// sass for loop - (doc:https://sass-lang.com/documentation/at-rules/control/for)
-@for $i from 1 through 10 {
-  .menu:nth-child(#{$i}) {
-    -webkit-animation-delay: #{$i * 500}ms;
-            animation-delay: #{$i * 500}ms;
-  }
-}

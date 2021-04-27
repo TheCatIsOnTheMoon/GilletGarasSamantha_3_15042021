@@ -2,7 +2,6 @@
 @keyframes pulse {
   0% {
     transform: scale3d(1, 1, 1);
-    opacity: 1;
   }
   10% {
     transform: scale3d(1.5, 1.5, 1.5);
@@ -20,16 +19,38 @@
   100% {
     transform: scale3d(0, 0, 0);
     opacity: 0;
+    z-index: -999;
   }
 }
 
-// fade-out animation : for restaurant page dishes
+// fade-in animation : for restaurant page dishes
+.menu--part1,
+.menu--part2,
+.menu--part3 {
+    position: relative;
+}
+
+.menu--part1 {
+    animation: fade-in 400ms ease-in;
+}
+.menu--part2 {
+    animation: fade-in 800ms ease-in;
+}
+.menu--part3 {
+    animation: fade-in 1200ms ease-in;
+}
+
 @keyframes fade-in {
   0% {
     opacity: 0;
+    top: 1rem;
+  }
+  85% {
+    opacity: 1;
   }
   100% {
     opacity: 1;
+    top: 0;
   }
 }
 

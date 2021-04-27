@@ -80,78 +80,68 @@ header a {
 }
 
 //menu
-.menu {
-  &__dish {
-    background-color: white;
-    @include box-shadow;
-    border-radius: 0.8rem;
+.menu__dish {
+  background-color: white;
+  @include box-shadow;
+  border-radius: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.8rem auto;
+
+  cursor: pointer;
+
+  &--text,
+  &--selection {
+    padding: 0.5rem 0.7rem;
+  }
+
+  &--text {
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+
+    // for transforming into dots (...)
+    width: 100%;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    & strong {
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+  }
+
+  &--price {
+    color: #343434;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: right;
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0.8rem auto;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
 
-    // animation link to a function in _functions.scss
-    animation: load 1s ease-in-out;
+    padding: 0 0 0.7rem 0;
+  }
 
-    cursor: pointer;
+  &--selection {
+    background-color: $color_tertiary;
+    border-radius: 0 0.8rem 0.8rem 0;
+    width: 0;
+    opacity: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 
-    &--text,
-    &--selection {
-      padding: 0.5rem 0.7rem;
-    }
+    transition-duration: 300ms;
 
-    &--text {
-      font-size: 0.75rem;
-      line-height: 1.2rem;
-
-      // for transforming into dots (...)
-      width: 100%;
-      white-space: nowrap;
-      -o-text-overflow: ellipsis;
-      text-overflow: ellipsis;
-      overflow: hidden;
-
-      & strong {
-        font-weight: bold;
-        font-size: 0.9rem;
-      }
-    }
-
-    &--price {
-      color: #343434;
-      font-size: 0.9rem;
-      font-weight: bold;
-      text-align: right;
-
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-item-align: end;
-      align-self: flex-end;
-
-      padding: 0 0 0.7rem 0;
-    }
-
-    &--selection {
-      background-color: $color_tertiary;
-      border-radius: 0 0.8rem 0.8rem 0;
-      width: 0;
-      opacity: 0;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-
-      -webkit-transition-duration: 300ms;
-      -o-transition-duration: 300ms;
-      transition-duration: 300ms;
-
-      & img {
-        width: 1.2rem;
-        margin: auto;
-      }
-
-      &:hover {
-      }
+    & img {
+      width: 1.2rem;
+      margin: auto;
     }
   }
 }

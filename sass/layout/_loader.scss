@@ -2,18 +2,16 @@
   animation: fade-in 3s ease-in;
 }
 
-#loading__spinner {
+#loading img {
   //vertically & horizontally centered
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, -50%);
 
-  & img {
-    width: 5rem;
-    height: 5rem;
-    opacity: 0;
+  width: 5rem;
+  height: 5rem;
 
-    animation: pulse 3s ease-in-out;
-  }
+  animation: pulse 3s ease-in-out;
+  animation-fill-mode: forwards;
 }
