@@ -1,5 +1,5 @@
 /*
-CSS ohmyfood - compiled scss
+ CSS ohmyfood - compiled scss
 */
 a,
 abbr,
@@ -159,7 +159,6 @@ a:visited {
 }
 
 * {
-  -webkit-box-sizing: border-box !important;
   box-sizing: border-box !important;
 }
 
@@ -176,12 +175,9 @@ body {
 .presentation__btn,
 .restaurantmenu__order__btn {
   background-color: #FF79DA;
-  background: -o-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
   border-radius: 3rem;
   border: none;
-  -webkit-box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
   box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
   color: white;
   cursor: pointer;
@@ -196,13 +192,8 @@ body {
 .presentation__btn:hover, .presentation__btn:focus,
 .restaurantmenu__order__btn:hover,
 .restaurantmenu__order__btn:focus {
-  background: -o-linear-gradient(top, #f995de 0%, #9e70d7 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#f995de), to(#9e70d7));
   background: linear-gradient(to bottom, #f995de 0%, #9e70d7 100%);
-  -webkit-box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.4);
   box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.4);
-  -webkit-transition-duration: 400ms;
-  -o-transition-duration: 400ms;
   transition-duration: 400ms;
   outline: none;
 }
@@ -231,36 +222,28 @@ body {
 .restaurants__figcaption__like__fullheart:hover,
 .restaurantmenu__presentation__title__like__fullheart:hover {
   opacity: 1;
-  -webkit-transition: 400ms ease-in-out;
-  -o-transition: 400ms ease-in-out;
   transition: 400ms ease-in-out;
 }
 
 @-webkit-keyframes pulse {
   0% {
-    -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
   10% {
-    -webkit-transform: scale3d(1.5, 1.5, 1.5);
-            transform: scale3d(1.5, 1.5, 1.5);
+    transform: scale3d(1.5, 1.5, 1.5);
   }
   25% {
-    -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
   35% {
-    -webkit-transform: scale3d(1.5, 1.5, 1.5);
-            transform: scale3d(1.5, 1.5, 1.5);
+    transform: scale3d(1.5, 1.5, 1.5);
   }
   50% {
-    -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
     opacity: 0.5;
   }
   100% {
-    -webkit-transform: scale3d(0, 0, 0);
-            transform: scale3d(0, 0, 0);
+    transform: scale3d(0, 0, 0);
     opacity: 0;
     z-index: -999;
   }
@@ -268,29 +251,23 @@ body {
 
 @keyframes pulse {
   0% {
-    -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
   10% {
-    -webkit-transform: scale3d(1.5, 1.5, 1.5);
-            transform: scale3d(1.5, 1.5, 1.5);
+    transform: scale3d(1.5, 1.5, 1.5);
   }
   25% {
-    -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
   35% {
-    -webkit-transform: scale3d(1.5, 1.5, 1.5);
-            transform: scale3d(1.5, 1.5, 1.5);
+    transform: scale3d(1.5, 1.5, 1.5);
   }
   50% {
-    -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
     opacity: 0.5;
   }
   100% {
-    -webkit-transform: scale3d(0, 0, 0);
-            transform: scale3d(0, 0, 0);
+    transform: scale3d(0, 0, 0);
     opacity: 0;
     z-index: -999;
   }
@@ -349,8 +326,6 @@ body {
   opacity: 1;
   width: 17%;
   margin-left: 1rem;
-  -webkit-transition: 300ms ease-in-out;
-  -o-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
 }
 
@@ -361,23 +336,19 @@ body {
 
 @-webkit-keyframes spin-tick {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes spin-tick {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -390,8 +361,7 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate3d(-50%, -50%, -50%);
-          transform: translate3d(-50%, -50%, -50%);
+  transform: translate3d(-50%, -50%, -50%);
   width: 5rem;
   height: 5rem;
   -webkit-animation: pulse 3s ease-in-out;
@@ -410,22 +380,12 @@ body {
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-line-pack: center;
   align-content: center;
   width: 100%;
   padding: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #333333;
   padding-bottom: 2.5rem;
@@ -460,18 +420,12 @@ body {
 }
 
 .location {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-line-pack: center;
   align-content: center;
   width: 100%;
   padding: 5%;
   background-color: #d9d9d9;
-  -webkit-box-shadow: inset 0 0.2rem 0.3rem -0.2rem rgba(0, 0, 0, 0.4);
   box-shadow: inset 0 0.2rem 0.3rem -0.2rem rgba(0, 0, 0, 0.4);
 }
 
@@ -483,12 +437,6 @@ body {
 .location__entry__input {
   background-color: #d9d9d9;
   margin-left: 0.5rem;
-}
-
-::-webkit-input-placeholder {
-  color: #333333;
-  font-weight: bold;
-  font-size: 0.9rem;
 }
 
 ::-moz-placeholder {
@@ -504,12 +452,6 @@ body {
   font-size: 0.9rem;
 }
 
-::-ms-input-placeholder {
-  color: #333333;
-  font-weight: bold;
-  font-size: 0.9rem;
-}
-
 ::placeholder {
   color: #333333;
   font-weight: bold;
@@ -517,22 +459,12 @@ body {
 }
 
 .presentation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-line-pack: center;
   align-content: center;
   width: 100%;
   padding: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   padding-bottom: 3rem;
   background-color: #f2f2f2;
@@ -560,22 +492,12 @@ body {
 }
 
 .howdoesitwork {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-line-pack: center;
   align-content: center;
   width: 100%;
   padding: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   padding-bottom: 3rem;
 }
@@ -583,7 +505,6 @@ body {
 .howdoesitwork__step {
   background-color: #f2f2f2;
   border-radius: 1.3rem;
-  -webkit-box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
   box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
   margin: 0 auto 0 0.5rem;
   font-weight: bold;
@@ -620,28 +541,16 @@ body {
 
 .howdoesitwork__step:hover {
   background-color: rgba(144, 88, 218, 0.2);
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
 .restaurants {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-line-pack: center;
   align-content: center;
   width: 100%;
   padding: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   padding-bottom: 3rem;
   background-color: #f2f2f2;
@@ -650,7 +559,6 @@ body {
 
 .restaurants__card {
   background-color: white;
-  -webkit-box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
   box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
   margin: 1.5rem auto;
@@ -679,11 +587,7 @@ body {
 
 .restaurants__figcaption {
   padding: 0.8rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -706,12 +610,7 @@ header a {
 }
 
 .restaurantmenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #f2f2f2;
 }
@@ -728,13 +627,8 @@ header a {
 }
 
 .restaurantmenu__presentation__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-line-pack: center;
   align-content: center;
   width: 100%;
   padding: 5%;
@@ -746,11 +640,7 @@ header a {
   bottom: -1.5rem;
   padding: 2rem 1.5rem 0 1.5rem;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -760,22 +650,12 @@ header a {
 }
 
 .restaurantmenu__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-line-pack: center;
   align-content: center;
   width: 100%;
   padding: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 2rem;
 }
@@ -803,11 +683,8 @@ header a {
 
 .menu__dish {
   background-color: white;
-  -webkit-box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
   box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
   border-radius: 0.8rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0.8rem auto;
   cursor: pointer;
@@ -822,7 +699,6 @@ header a {
   line-height: 1.2rem;
   width: 100%;
   white-space: nowrap;
-  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -837,10 +713,7 @@ header a {
   font-size: 0.9rem;
   font-weight: bold;
   text-align: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: end;
   align-self: flex-end;
   padding: 0 0 0.7rem 0;
 }
@@ -850,12 +723,8 @@ header a {
   border-radius: 0 0.8rem 0.8rem 0;
   width: 0;
   opacity: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-transition-duration: 300ms;
-       -o-transition-duration: 300ms;
-          transition-duration: 300ms;
+  transition-duration: 300ms;
 }
 
 .menu__dish--selection img {
@@ -864,13 +733,8 @@ header a {
 }
 
 .restaurantmenu__order {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-line-pack: center;
   align-content: center;
   width: 100%;
   padding: 5%;
@@ -910,15 +774,8 @@ header a {
     left: 10rem;
   }
   .restaurants__box {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
   }
   .restaurants {
@@ -931,26 +788,13 @@ header a {
     height: 17rem;
   }
   .restaurantmenu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
     align-items: flex-start;
-    -webkit-box-shadow: inset 0 0.2rem 0.3rem -0.2rem rgba(0, 0, 0, 0.4);
     box-shadow: inset 0 0.2rem 0.3rem -0.2rem rgba(0, 0, 0, 0.4);
   }
   .restaurantmenu__presentation {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
     width: 100%;
     border-radius: 2rem 2rem 2rem 2rem;
@@ -960,7 +804,6 @@ header a {
   }
   .restaurantmenu__presentation__illustration img {
     border-radius: 2rem 2rem 2rem 2rem;
-    -webkit-box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
     box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
     position: relative;
     bottom: -0.15rem;
@@ -969,7 +812,6 @@ header a {
   }
   .restaurantmenu__presentation__title {
     border-radius: 2rem 2rem 2rem 2rem;
-    -webkit-box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
     box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
     background-color: white;
     position: relative;
