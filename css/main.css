@@ -274,18 +274,18 @@ body {
 }
 
 .menu--part1 {
-  -webkit-animation: fade-in 400ms ease-in;
-  animation: fade-in 400ms ease-in;
+  -webkit-animation: fade-in 600ms ease-in;
+  animation: fade-in 600ms ease-in;
 }
 
 .menu--part2 {
-  -webkit-animation: fade-in 800ms ease-in;
-  animation: fade-in 800ms ease-in;
+  -webkit-animation: fade-in 1200ms ease-in;
+  animation: fade-in 1200ms ease-in;
 }
 
 .menu--part3 {
-  -webkit-animation: fade-in 1200ms ease-in;
-  animation: fade-in 1200ms ease-in;
+  -webkit-animation: fade-in 1800ms ease-in;
+  animation: fade-in 1800ms ease-in;
 }
 
 @-webkit-keyframes fade-in {
@@ -351,7 +351,6 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate3d(-50%, -50%, -50%);
   width: 5rem;
   height: 5rem;
   -webkit-animation: pulse 3s ease-in-out;
