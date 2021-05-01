@@ -74,6 +74,7 @@ header a {
   background-color: white;
   @include box-shadow;
   border-radius: 0.8rem;
+  height: 3.5rem;
   display: flex;
   margin: 0.8rem auto;
   cursor: pointer;
