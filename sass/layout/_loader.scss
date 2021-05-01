@@ -1,5 +1,6 @@
 #content {
-  animation: fade-in 3s ease-in;
+  -webkit-animation: fade-in 3s ease-in;
+          animation: fade-in 3s ease-in;
 }
 
 #loading img {
@@ -8,10 +9,10 @@
   left: 50%;
   top: 50%;
   transform: translate3d(-50%, -50%, -50%);
-
   width: 5rem;
   height: 5rem;
-
-  animation: pulse 3s ease-in-out;
-  animation-fill-mode: forwards;
+  -webkit-animation: pulse 3s ease-in-out;
+          animation: pulse 3s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }

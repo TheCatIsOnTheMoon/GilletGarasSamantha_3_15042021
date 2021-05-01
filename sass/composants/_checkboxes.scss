@@ -1,10 +1,10 @@
 //heart checkboxes
-.restaurants__figcaption__like,
-.restaurantmenu__presentation__title__like {
+
+.restaurantmenu__presentation__title__like,
+.restaurants__figcaption__like {
   position: relative;
   width: 2rem;
   margin: 0.3rem 0.5rem 0 0;
-
   cursor: pointer;
 
   &__emptyheart {
@@ -19,8 +19,6 @@
 
     &:hover {
       opacity: 1;
-      -webkit-transition: 400ms ease-in-out;
-      -o-transition: 400ms ease-in-out;
       transition: 400ms ease-in-out;
     }
   }

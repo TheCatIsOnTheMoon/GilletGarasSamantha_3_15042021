@@ -1,16 +1,14 @@
 @media (min-width: 1024px) {
   // page-index
+  .footer,
+  .howdoesitwork,
   .location,
   .presentation,
-  .howdoesitwork,
-  .restaurants,
-  .footer {
+  .restaurants {
     padding: 2rem;
   }
 
-  .presentation {
-
-  }
+  .presentation {}
 
   .howdoesitwork {
     padding-top: 1rem;
@@ -37,20 +35,14 @@
   }
 
   .restaurants__box {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
   .restaurants {
     padding-bottom: 6rem;
+
     & a {
       width: 23%;
     }
@@ -59,33 +51,16 @@
       height: 17rem;
     }
   }
-
   // page-restaurant
   .restaurantmenu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
     align-items: flex-start;
-    -webkit-box-shadow: inset 0 0.2rem 0.3rem -0.2rem rgba(0, 0, 0, 0.4);
     box-shadow: inset 0 0.2rem 0.3rem -0.2rem rgba(0, 0, 0, 0.4);
 
     &__presentation {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
       flex-direction: column-reverse;
-
-
-
       width: 100%;
       border-radius: 2rem 2rem 2rem 2rem;
       margin-top: 4rem;
@@ -94,17 +69,16 @@
 
       &__illustration img {
         border-radius: 2rem 2rem 2rem 2rem;
-         @include box-shadow;
+        @include box-shadow;
         position: relative;
         bottom: -0.15rem;
-
         height: auto;
         margin-top: 1rem;
       }
 
       &__title {
         border-radius: 2rem 2rem 2rem 2rem;
-         @include box-shadow;
+        @include box-shadow;
         background-color: white;
         position: relative;
         top: 0;

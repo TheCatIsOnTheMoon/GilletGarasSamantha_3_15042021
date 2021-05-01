@@ -1,5 +1,5 @@
 /*
- CSS ohmyfood - compiled scss
+CSS ohmyfood - compiled scss
 */
 a,
 abbr,
@@ -188,39 +188,35 @@ body {
   margin: 0 auto;
   padding: 0.9rem 1rem;
 }
-
-.presentation__btn:hover, .presentation__btn:focus,
-.restaurantmenu__order__btn:hover,
-.restaurantmenu__order__btn:focus {
+.presentation__btn:focus, .presentation__btn:hover,
+.restaurantmenu__order__btn:focus,
+.restaurantmenu__order__btn:hover {
   background: linear-gradient(to bottom, #f995de 0%, #9e70d7 100%);
   box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.4);
   transition-duration: 400ms;
   outline: none;
 }
 
-.restaurants__figcaption__like,
-.restaurantmenu__presentation__title__like {
+.restaurantmenu__presentation__title__like,
+.restaurants__figcaption__like {
   position: relative;
   width: 2rem;
   margin: 0.3rem 0.5rem 0 0;
   cursor: pointer;
 }
-
-.restaurants__figcaption__like__emptyheart,
-.restaurantmenu__presentation__title__like__emptyheart {
+.restaurantmenu__presentation__title__like__emptyheart,
+.restaurants__figcaption__like__emptyheart {
   width: 1.5rem;
   position: absolute;
 }
-
-.restaurants__figcaption__like__fullheart,
-.restaurantmenu__presentation__title__like__fullheart {
+.restaurantmenu__presentation__title__like__fullheart,
+.restaurants__figcaption__like__fullheart {
   width: 1.5rem;
   position: absolute;
   opacity: 0;
 }
-
-.restaurants__figcaption__like__fullheart:hover,
-.restaurantmenu__presentation__title__like__fullheart:hover {
+.restaurantmenu__presentation__title__like__fullheart:hover,
+.restaurants__figcaption__like__fullheart:hover {
   opacity: 1;
   transition: 400ms ease-in-out;
 }
@@ -248,7 +244,6 @@ body {
     z-index: -999;
   }
 }
-
 @keyframes pulse {
   0% {
     transform: scale3d(1, 1, 1);
@@ -272,7 +267,6 @@ body {
     z-index: -999;
   }
 }
-
 .menu--part1,
 .menu--part2,
 .menu--part3 {
@@ -281,17 +275,17 @@ body {
 
 .menu--part1 {
   -webkit-animation: fade-in 400ms ease-in;
-          animation: fade-in 400ms ease-in;
+  animation: fade-in 400ms ease-in;
 }
 
 .menu--part2 {
   -webkit-animation: fade-in 800ms ease-in;
-          animation: fade-in 800ms ease-in;
+  animation: fade-in 800ms ease-in;
 }
 
 .menu--part3 {
   -webkit-animation: fade-in 1200ms ease-in;
-          animation: fade-in 1200ms ease-in;
+  animation: fade-in 1200ms ease-in;
 }
 
 @-webkit-keyframes fade-in {
@@ -307,7 +301,6 @@ body {
     top: 0;
   }
 }
-
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -321,7 +314,6 @@ body {
     top: 0;
   }
 }
-
 .menu__dish:hover > .menu__dish--selection {
   opacity: 1;
   width: 17%;
@@ -331,7 +323,7 @@ body {
 
 .menu__dish:hover > .menu__dish--selection img {
   -webkit-animation: spin-tick 400ms ease-in-out;
-          animation: spin-tick 400ms ease-in-out;
+  animation: spin-tick 400ms ease-in-out;
 }
 
 @-webkit-keyframes spin-tick {
@@ -342,7 +334,6 @@ body {
     transform: rotate(360deg);
   }
 }
-
 @keyframes spin-tick {
   from {
     transform: rotate(0deg);
@@ -351,10 +342,9 @@ body {
     transform: rotate(360deg);
   }
 }
-
 #content {
   -webkit-animation: fade-in 3s ease-in;
-          animation: fade-in 3s ease-in;
+  animation: fade-in 3s ease-in;
 }
 
 #loading img {
@@ -365,15 +355,15 @@ body {
   width: 5rem;
   height: 5rem;
   -webkit-animation: pulse 3s ease-in-out;
-          animation: pulse 3s ease-in-out;
+  animation: pulse 3s ease-in-out;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .header__logo {
   font-family: Shrikhand;
   font-size: 2rem;
-  padding: 1.5rem 0 1rem 0;
+  padding: 1.5rem 0 1rem;
   width: 100%;
   text-align: center;
   position: relative;
@@ -390,17 +380,14 @@ body {
   background-color: #333333;
   padding-bottom: 2.5rem;
 }
-
 .footer__logo {
   font-family: Shrikhand;
   color: white;
-  padding: 0.7rem 0 1rem 0;
+  padding: 0.7rem 0 1rem;
 }
-
 .footer__links li {
   padding: 0.3rem 0;
 }
-
 .footer__links img {
   width: 0.7rem;
   height: 0.9rem;
@@ -408,13 +395,11 @@ body {
   position: relative;
   top: 0.2rem;
 }
-
 .footer__links a {
   color: white;
   font-size: 0.8rem;
   font-weight: 400;
 }
-
 .footer__links a:hover {
   color: #99E2D0;
 }
@@ -428,12 +413,10 @@ body {
   background-color: #d9d9d9;
   box-shadow: inset 0 0.2rem 0.3rem -0.2rem rgba(0, 0, 0, 0.4);
 }
-
 .location__entry__icon {
   width: 0.7rem;
   margin-left: 1.5rem;
 }
-
 .location__entry__input {
   background-color: #d9d9d9;
   margin-left: 0.5rem;
@@ -469,26 +452,23 @@ body {
   padding-bottom: 3rem;
   background-color: #f2f2f2;
 }
-
-.presentation__title, .presentation__explanations {
+.presentation__explanations, .presentation__title {
   text-align: center;
 }
-
 .presentation__title {
   font-size: 1.5rem;
   font-weight: 700;
-  margin: 0.5rem auto 1rem auto;
+  margin: 0.5rem auto 1rem;
 }
-
 .presentation__explanations {
   font-size: 1rem;
-  margin: 0.5rem auto 2rem auto;
+  margin: 0.5rem auto 2rem;
 }
 
 .section__title {
   font-size: 1.3rem;
   font-weight: 900;
-  margin: 2rem 0rem 1rem 0rem;
+  margin: 2rem 0 1rem;
 }
 
 .howdoesitwork {
@@ -501,17 +481,15 @@ body {
   flex-direction: column;
   padding-bottom: 3rem;
 }
-
 .howdoesitwork__step {
   background-color: #f2f2f2;
   border-radius: 1.3rem;
   box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
   margin: 0 auto 0 0.5rem;
   font-weight: bold;
-  padding: 1rem 0 1.5rem 0;
+  padding: 1rem 0 1.5rem;
   cursor: default;
 }
-
 .howdoesitwork__step__number {
   display: inline-block;
   background-color: #9356DC;
@@ -525,7 +503,6 @@ body {
   position: relative;
   left: -0.6rem;
 }
-
 .howdoesitwork__step__icon {
   width: 1.5rem;
   height: 1.5rem;
@@ -534,11 +511,9 @@ body {
   position: relative;
   top: 0.15rem;
 }
-
 .howdoesitwork__step + .howdoesitwork__step {
   margin-top: 1.3rem;
 }
-
 .howdoesitwork__step:hover {
   background-color: rgba(144, 88, 218, 0.2);
   transition: 0.3s;
@@ -556,7 +531,6 @@ body {
   background-color: #f2f2f2;
   font-size: 1.2em;
 }
-
 .restaurants__card {
   background-color: white;
   box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
@@ -564,7 +538,6 @@ body {
   margin: 1.5rem auto;
   position: relative;
 }
-
 .restaurants__photo {
   height: 200px;
   width: 100%;
@@ -572,29 +545,25 @@ body {
   object-fit: cover;
   border-radius: 1rem 1rem 0 0;
 }
-
 .restaurants__newtag {
   background-color: #99E2D0;
   border-radius: 0.1rem;
   color: #219175;
   font-size: 0.7rem;
   font-weight: 500;
-  padding: 0.4rem 0.6rem 0.3rem 0.6rem;
+  padding: 0.4rem 0.6rem 0.3rem;
   position: absolute;
   top: 1rem;
   right: 1rem;
 }
-
 .restaurants__figcaption {
   padding: 0.8rem;
   display: flex;
   justify-content: space-between;
 }
-
 .restaurants__figcaption__text {
   font-size: 0.9rem;
 }
-
 .restaurants__figcaption__text__namerestaurant {
   font-size: 1rem;
   font-weight: 900;
@@ -614,18 +583,15 @@ header a {
   flex-direction: column;
   background-color: #f2f2f2;
 }
-
 .restaurantmenu__presentation {
   position: relative;
 }
-
 .restaurantmenu__presentation__illustration img {
   width: 100%;
   height: 20rem;
   -o-object-fit: cover;
   object-fit: cover;
 }
-
 .restaurantmenu__presentation__title {
   display: flex;
   justify-content: center;
@@ -638,17 +604,15 @@ header a {
   font-size: 1.5rem;
   position: absolute;
   bottom: -1.5rem;
-  padding: 2rem 1.5rem 0 1.5rem;
+  padding: 2rem 1.5rem 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-
 .restaurantmenu__presentation__title__like {
   width: 1.3rem;
-  margin: 0rem 0.5rem 0 0;
+  margin: 0 0.5rem 0 0;
 }
-
 .restaurantmenu__menu {
   display: flex;
   justify-content: center;
@@ -659,14 +623,12 @@ header a {
   flex-direction: column;
   margin-top: 2rem;
 }
-
 .restaurantmenu__menu__mealstep {
   font-size: 0.9rem;
-  margin: 0 0 0.4rem 0;
+  margin: 0 0 0.4rem;
   text-transform: uppercase;
   position: relative;
 }
-
 .restaurantmenu__menu__mealstep:after {
   content: "";
   position: absolute;
@@ -676,7 +638,6 @@ header a {
   width: 2.2rem;
   background-color: #99E2D0;
 }
-
 .restaurantmenu__menu__mealstep ~ .restaurantmenu__menu__mealstep {
   margin-top: 2rem;
 }
@@ -689,11 +650,9 @@ header a {
   margin: 0.8rem auto;
   cursor: pointer;
 }
-
-.menu__dish--text, .menu__dish--selection {
+.menu__dish--selection, .menu__dish--text {
   padding: 0.5rem 0.7rem;
 }
-
 .menu__dish--text {
   font-size: 0.75rem;
   line-height: 1.2rem;
@@ -702,12 +661,10 @@ header a {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-
 .menu__dish--text strong {
   font-weight: bold;
   font-size: 0.9rem;
 }
-
 .menu__dish--price {
   color: #343434;
   font-size: 0.9rem;
@@ -715,9 +672,8 @@ header a {
   text-align: right;
   display: flex;
   align-self: flex-end;
-  padding: 0 0 0.7rem 0;
+  padding: 0 0 0.7rem;
 }
-
 .menu__dish--selection {
   background-color: #99E2D0;
   border-radius: 0 0.8rem 0.8rem 0;
@@ -726,7 +682,6 @@ header a {
   display: flex;
   transition-duration: 300ms;
 }
-
 .menu__dish--selection img {
   width: 1.2rem;
   margin: auto;
@@ -741,19 +696,19 @@ header a {
   padding-top: 2rem;
   padding-bottom: 4rem;
 }
-
 .restaurantmenu__order__btn {
   width: auto;
 }
 
 @media (min-width: 1024px) {
-  .location,
-  .presentation,
-  .howdoesitwork,
-  .restaurants,
-  .footer {
+  .footer,
+.howdoesitwork,
+.location,
+.presentation,
+.restaurants {
     padding: 2rem;
   }
+
   .howdoesitwork {
     padding-top: 1rem;
     padding-bottom: 3rem;
@@ -765,19 +720,23 @@ header a {
   .howdoesitwork ul li {
     padding-right: 2rem;
   }
+
   #howdoesitwork__step1 {
     position: relative;
     left: -10rem;
   }
+
   #howdoesitwork__step3 {
     position: relative;
     left: 10rem;
   }
+
   .restaurants__box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
+
   .restaurants {
     padding-bottom: 6rem;
   }
@@ -787,6 +746,7 @@ header a {
   .restaurants__card {
     height: 17rem;
   }
+
   .restaurantmenu {
     display: flex;
     flex-direction: row;
@@ -823,3 +783,5 @@ header a {
     padding-top: 0;
   }
 }
+
+/*# sourceMappingURL=main.css.map */

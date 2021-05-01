@@ -2,200 +2,200 @@
 <html lang="fr" dir="ltr">
 
 <head>
-    <meta charset='utf-8' />
-    <meta name='theme-color' content='#FF79DA' />
-    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <meta charset='utf-8' />
+  <meta name='theme-color' content='#FF79DA' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
 
-    <meta name='keywords' content='France, restaurants, réservation' />
-    <meta name='description' content='Réservez le menu qui vous convient' />
-    <meta name='author' content='Gillet-Garas Samantha' />
+  <meta name='keywords' content='France, restaurants, réservation' />
+  <meta name='description' content='Réservez le menu qui vous convient' />
+  <meta name='author' content='Gillet-Garas Samantha' />
 
-    <link rel='stylesheet' href='css/style.css' />
+  <link rel='stylesheet' href='css/main.css' />
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
 
-    <link rel='icon' type='image/svg' href='images/icons/heart-regular--favicon.svg' />
+  <link rel='icon' type='image/svg' href='images/icons/heart-regular--favicon.svg' />
 
-    <title>ohmyfood</title>
+  <title>ohmyfood</title>
 </head>
 
 <body>
 
-    <div id="loading">
-        <img src="images/icons/heart-regular--favicon.svg" alt="heart">
-    </div>
+  <div id="loading">
+    <img src="images/icons/heart-regular--favicon.svg" alt="heart">
+  </div>
 
-    <div id="content">
+  <div id="content">
 
-        <!-- header -->
-        <header class="header">
-            <h1 class="header__logo">ohmyfood</h1>
-        </header>
+    <!-- header -->
+    <header class="header">
+      <h1 class="header__logo">ohmyfood</h1>
+    </header>
 
-        <main>
+    <main>
 
-            <!-- input location -->
-            <form class="location" action="index.html" method="post">
-                <div class="location__entry">
-                    <img class="location__entry__icon" src="images/icons/map-marker-alt-solid.svg" alt="icon-map-marker">
-                    <input class="location__entry__input" type="text" name="location__input" value="" placeholder="Paris, Belleville" />
+      <!-- input location -->
+      <form class="location" action="index.html" method="post">
+        <div class="location__entry">
+          <img class="location__entry__icon" src="images/icons/map-marker-alt-solid.svg" alt="icon-map-marker">
+          <input class="location__entry__input" type="text" name="location__input" value="" placeholder="Paris, Belleville" />
+        </div>
+
+      </form>
+
+      <!-- section 1 : concept presentation -->
+      <section class="presentation">
+        <div class="presentation__box">
+          <h2 class="presentation__title">Réservez le menu qui <br />
+            vous convient</h2>
+          <p class="presentation__explanations">Découvrez des restaurants d'exception,<br />
+            sélectionnés par nos soins.</p>
+        </div>
+        <button class="presentation__btn" onclick="location.href='#restaurants'" type="button" name="button">Explorer nos restaurants</button>
+      </section>
+
+
+      <!-- section 2 : explanation, how does it work -->
+      <section class="howdoesitwork">
+        <h3 class="section__title">Fonctionnement</h3>
+
+        <ul class="howdoesitwork__list">
+          <li class="howdoesitwork__step" id="howdoesitwork__step1">
+            <span class="howdoesitwork__step__number">1</span>
+            <img class="howdoesitwork__step__icon" src="images/icons/mobile-alt-solid.svg" alt="icon-mobile">
+            <span class="howdoesitwork__step__text">Choisissez un restaurant</span>
+          </li>
+          <li class="howdoesitwork__step" id="howdoesitwork__step2">
+            <span class="howdoesitwork__step__number">2</span>
+            <img class="howdoesitwork__step__icon" src="images/icons/list-ul-solid.svg" alt="icon-list">
+            <span class="howdoesitwork__step__text">Composez votre menu</span>
+          </li>
+          <li class="howdoesitwork__step" id="howdoesitwork__step3">
+            <span class="howdoesitwork__step__number">3</span>
+            <img class="howdoesitwork__step__icon" src="images/icons/store-solid.svg" alt="icon-restaurant">
+            <span class="howdoesitwork__step__text">Dégustez au restaurant</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- section 3 : restaurants choices -->
+      <section class="restaurants" id="restaurants">
+        <h3 class="section__title">Restaurants</h3>
+        <div class="restaurants__box">
+
+          <!-- La palette du goût -->
+          <a href="pages/lapalettedugout.html">
+            <figure class="restaurants__card">
+              <img class="restaurants__photo" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo-dish">
+              <span class="restaurants__newtag">Nouveau</span>
+              <figcaption class="restaurants__figcaption">
+                <div class="restaurants__figcaption__text">
+                  <h4 class="restaurants__figcaption__text__namerestaurant">La palette du goût</h4>
+                  <p>Ménilmontant</p>
                 </div>
-
-            </form>
-
-            <!-- section 1 : concept presentation -->
-            <section class="presentation">
-                <div class="presentation__box">
-                    <h2 class="presentation__title">Réservez le menu qui <br />
-                        vous convient</h2>
-                    <p class="presentation__explanations">Découvrez des restaurants d'exception,<br />
-                        sélectionnés par nos soins.</p>
+                <div class="restaurants__figcaption__like">
+                  <div class="restaurants__figcaption__like__emptyheart">
+                    <img src="images/icons/heart-regular.svg" alt="empty heart">
+                  </div>
+                  <div class="restaurants__figcaption__like__fullheart">
+                    <img src="images/icons/heart-solid.svg" alt="solid heart">
+                  </div>
                 </div>
-                <button class="presentation__btn" onclick="location.href='#restaurants'" type="button" name="button">Explorer nos restaurants</button>
-            </section>
+              </figcaption>
+            </figure>
+          </a>
 
-
-            <!-- section 2 : explanation, how does it work -->
-            <section class="howdoesitwork">
-                <h3 class="section__title">Fonctionnement</h3>
-
-                <ul class="howdoesitwork__list">
-                    <li class="howdoesitwork__step" id="howdoesitwork__step1">
-                        <span class="howdoesitwork__step__number">1</span>
-                        <img class="howdoesitwork__step__icon" src="images/icons/mobile-alt-solid.svg" alt="icon-mobile">
-                        <span class="howdoesitwork__step__text">Choisissez un restaurant</span>
-                    </li>
-                    <li class="howdoesitwork__step" id="howdoesitwork__step2">
-                        <span class="howdoesitwork__step__number">2</span>
-                        <img class="howdoesitwork__step__icon" src="images/icons/list-ul-solid.svg" alt="icon-list">
-                        <span class="howdoesitwork__step__text">Composez votre menu</span>
-                    </li>
-                    <li class="howdoesitwork__step" id="howdoesitwork__step3">
-                        <span class="howdoesitwork__step__number">3</span>
-                        <img class="howdoesitwork__step__icon" src="images/icons/store-solid.svg" alt="icon-restaurant">
-                        <span class="howdoesitwork__step__text">Dégustez au restaurant</span>
-                    </li>
-                </ul>
-            </section>
-
-            <!-- section 3 : restaurants choices -->
-            <section class="restaurants" id="restaurants">
-                <h3 class="section__title">Restaurants</h3>
-                <div class="restaurants__box">
-
-                    <!-- La palette du goût -->
-                    <a href="pages/lapalettedugout.html">
-                        <figure class="restaurants__card">
-                            <img class="restaurants__photo" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo-dish">
-                            <span class="restaurants__newtag">Nouveau</span>
-                            <figcaption class="restaurants__figcaption">
-                                <div class="restaurants__figcaption__text">
-                                    <h4 class="restaurants__figcaption__text__namerestaurant">La palette du goût</h4>
-                                    <p>Ménilmontant</p>
-                                </div>
-                                <div class="restaurants__figcaption__like">
-                                    <div class="restaurants__figcaption__like__emptyheart">
-                                        <img src="images/icons/heart-regular.svg" alt="empty heart">
-                                    </div>
-                                    <div class="restaurants__figcaption__like__fullheart">
-                                        <img src="images/icons/heart-solid.svg" alt="solid heart">
-                                    </div>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </a>
-
-                    <!-- La note enchantée -->
-                    <a href="pages/lanoteenchantee.html">
-                        <figure class="restaurants__card restaurants__card--2">
-                            <img class="restaurants__photo" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo-dish">
-                            <span class="restaurants__newtag">Nouveau</span>
-                            <figcaption class="restaurants__figcaption">
-                                <div class="restaurants__figcaption__text">
-                                    <h4 class="restaurants__figcaption__text__namerestaurant">La note enchantée</h4>
-                                    <p>Charonne</p>
-                                </div>
-                                <div class="restaurants__figcaption__like">
-                                    <div class="restaurants__figcaption__like__emptyheart">
-                                        <img src="images/icons/heart-regular.svg" alt="empty heart">
-                                    </div>
-                                    <div class="restaurants__figcaption__like__fullheart">
-                                        <img src="images/icons/heart-solid.svg" alt="solid heart">
-                                    </div>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </a>
-
-                    <!-- À la française -->
-                    <a href="pages/alafrancaise.html">
-                        <figure class="restaurants__card">
-                            <img class="restaurants__photo" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo-dish">
-                            <figcaption class="restaurants__figcaption">
-                                <div class="restaurants__figcaption__text">
-                                    <h4 class="restaurants__figcaption__text__namerestaurant">À la française</h4>
-                                    <p>Cité Rouge</p>
-                                </div>
-                                <div class="restaurants__figcaption__like">
-                                    <div class="restaurants__figcaption__like__emptyheart">
-                                        <img src="images/icons/heart-regular.svg" alt="empty heart">
-                                    </div>
-                                    <div class="restaurants__figcaption__like__fullheart">
-                                        <img src="images/icons/heart-solid.svg" alt="solid heart">
-                                    </div>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </a>
-
-                    <!-- Le délice des sens -->
-                    <a href="pages/ledelicedessens.html">
-                        <figure class="restaurants__card">
-                            <img class="restaurants__photo" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo-dish">
-                            <figcaption class="restaurants__figcaption">
-                                <div class="restaurants__figcaption__text">
-                                    <h4 class="restaurants__figcaption__text__namerestaurant">Le délice des sens</h4>
-                                    <p>Folie-Méricourt</p>
-                                </div>
-                                <div class="restaurants__figcaption__like">
-                                    <div class="restaurants__figcaption__like__emptyheart">
-                                        <img src="images/icons/heart-regular.svg" alt="empty heart">
-                                    </div>
-                                    <div class="restaurants__figcaption__like__fullheart">
-                                        <img src="images/icons/heart-solid.svg" alt="solid heart">
-                                    </div>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </a>
-
+          <!-- La note enchantée -->
+          <a href="pages/lanoteenchantee.html">
+            <figure class="restaurants__card restaurants__card--2">
+              <img class="restaurants__photo" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo-dish">
+              <span class="restaurants__newtag">Nouveau</span>
+              <figcaption class="restaurants__figcaption">
+                <div class="restaurants__figcaption__text">
+                  <h4 class="restaurants__figcaption__text__namerestaurant">La note enchantée</h4>
+                  <p>Charonne</p>
                 </div>
-            </section>
+                <div class="restaurants__figcaption__like">
+                  <div class="restaurants__figcaption__like__emptyheart">
+                    <img src="images/icons/heart-regular.svg" alt="empty heart">
+                  </div>
+                  <div class="restaurants__figcaption__like__fullheart">
+                    <img src="images/icons/heart-solid.svg" alt="solid heart">
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
 
-        </main>
+          <!-- À la française -->
+          <a href="pages/alafrancaise.html">
+            <figure class="restaurants__card">
+              <img class="restaurants__photo" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo-dish">
+              <figcaption class="restaurants__figcaption">
+                <div class="restaurants__figcaption__text">
+                  <h4 class="restaurants__figcaption__text__namerestaurant">À la française</h4>
+                  <p>Cité Rouge</p>
+                </div>
+                <div class="restaurants__figcaption__like">
+                  <div class="restaurants__figcaption__like__emptyheart">
+                    <img src="images/icons/heart-regular.svg" alt="empty heart">
+                  </div>
+                  <div class="restaurants__figcaption__like__fullheart">
+                    <img src="images/icons/heart-solid.svg" alt="solid heart">
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
 
-        <!-- footer -->
-        <footer class="footer">
-            <h4 class="footer__logo">ohmyfood</h4>
-            <ul class="footer__links">
-                <li>
-                    <a href="#"><img src="images/icons/utensils-solid.svg" alt="icon_cutlery">
-                        Proposer un restaurant</a>
-                </li>
-                <li>
-                    <a href="#"><img src="images/icons/hands-helping-solid.svg" alt="icon_handshake">
-                        Devenir partenaire</a>
-                </li>
-                <li>
-                    <a href="#">Mentions légales</a>
-                </li>
-                <li>
-                    <a href="mailto:ohmyfood@example.com">Contact</a>
-                </li>
-            </ul>
-        </footer>
+          <!-- Le délice des sens -->
+          <a href="pages/ledelicedessens.html">
+            <figure class="restaurants__card">
+              <img class="restaurants__photo" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo-dish">
+              <figcaption class="restaurants__figcaption">
+                <div class="restaurants__figcaption__text">
+                  <h4 class="restaurants__figcaption__text__namerestaurant">Le délice des sens</h4>
+                  <p>Folie-Méricourt</p>
+                </div>
+                <div class="restaurants__figcaption__like">
+                  <div class="restaurants__figcaption__like__emptyheart">
+                    <img src="images/icons/heart-regular.svg" alt="empty heart">
+                  </div>
+                  <div class="restaurants__figcaption__like__fullheart">
+                    <img src="images/icons/heart-solid.svg" alt="solid heart">
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
 
-    </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <h4 class="footer__logo">ohmyfood</h4>
+      <ul class="footer__links">
+        <li>
+          <a href="#"><img src="images/icons/utensils-solid.svg" alt="icon_cutlery">
+            Proposer un restaurant</a>
+        </li>
+        <li>
+          <a href="#"><img src="images/icons/hands-helping-solid.svg" alt="icon_handshake">
+            Devenir partenaire</a>
+        </li>
+        <li>
+          <a href="#">Mentions légales</a>
+        </li>
+        <li>
+          <a href="mailto:ohmyfood@example.com">Contact</a>
+        </li>
+      </ul>
+    </footer>
+
+  </div>
 
 </body>
 

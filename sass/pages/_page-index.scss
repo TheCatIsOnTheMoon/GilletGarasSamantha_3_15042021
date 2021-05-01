@@ -1,7 +1,8 @@
 // input location
+
 .location {
-  @include flex-centercontent background-color: $color_background;
-  -webkit-box-shadow: inset 0 0.2rem 0.3rem -0.2rem rgba(0, 0, 0, 0.4);
+  @include flex-centercontent;
+  background-color: $color_background;
   box-shadow: inset 0 0.2rem 0.3rem -0.2rem rgba(0, 0, 0, 0.4);
 
   &__entry {
@@ -17,12 +18,6 @@
   }
 }
 
-::-webkit-input-placeholder {
-  color: $color_background--darker;
-  font-weight: bold;
-  font-size: 0.9rem;
-}
-
 ::-moz-placeholder {
   color: $color_background--darker;
   font-weight: bold;
@@ -36,61 +31,56 @@
   font-size: 0.9rem;
 }
 
-::-ms-input-placeholder {
-  color: $color_background--darker;
-  font-weight: bold;
-  font-size: 0.9rem;
-}
-
 ::placeholder {
   color: $color_background--darker;
   font-weight: bold;
   font-size: 0.9rem;
 }
-
 // section 1 : concept presentation
+
 .presentation {
   @include flex-centercontent;
   @include flex-column;
   @include general-paddingbottom;
   background-color: $color_background--lighter;
 
-  &__title,
-  &__explanations {
+  &__explanations,
+  &__title {
     text-align: center;
   }
 
   &__title {
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 0.5rem auto 1rem auto;
+    margin: 0.5rem auto 1rem;
   }
 
   &__explanations {
     font-size: 1rem;
-    margin: 0.5rem auto 2rem auto;
+    margin: 0.5rem auto 2rem;
   }
 }
-
 //style texts sections titles
+
 .section__title {
   font-size: 1.3rem;
   font-weight: 900;
-  margin: 2rem 0rem 1rem 0rem;
+  margin: 2rem 0 1rem;
 }
-
 // section 2 : explanation, how does it work
+
 .howdoesitwork {
   @include flex-centercontent;
   @include flex-column;
   @include general-paddingbottom;
+
   &__step {
     background-color: $color_background--lighter;
     border-radius: 1.3rem;
     @include box-shadow;
     margin: 0 auto 0 0.5rem;
     font-weight: bold;
-    padding: 1rem 0 1.5rem 0;
+    padding: 1rem 0 1.5rem;
     cursor: default;
 
     &__number {
@@ -103,7 +93,6 @@
       width: 1.3rem;
       text-align: center;
       padding-top: 0.4rem;
-
       position: relative;
       left: -0.6rem;
     }
@@ -124,13 +113,11 @@
 
   &__step:hover {
     background-color: $color_primary--lighter;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
     transition: 0.3s;
   }
 }
-
 // section 3 : restaurants choices
+
 .restaurants {
   @include flex-centercontent;
   @include flex-column;
@@ -160,7 +147,7 @@
     color: $color_tertiary--darker;
     font-size: 0.7rem;
     font-weight: 500;
-    padding: 0.4rem 0.6rem 0.3rem 0.6rem;
+    padding: 0.4rem 0.6rem 0.3rem;
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -168,15 +155,12 @@
 
   &__figcaption {
     padding: 0.8rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
 
     &__text {
       font-size: 0.9rem;
+
       &__namerestaurant {
         font-size: 1rem;
         font-weight: 900;
