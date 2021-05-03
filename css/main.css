@@ -415,6 +415,9 @@ body {
   background-color: #d9d9d9;
   box-shadow: inset 0 0.2rem 0.3rem -0.2rem rgba(0, 0, 0, 0.4);
 }
+.location__entry {
+  padding-left: 3rem;
+}
 .location__entry__icon {
   width: 0.7rem;
   margin-left: 1.5rem;
@@ -746,10 +749,6 @@ header a {
   .restaurants a {
     width: 23%;
   }
-  .restaurants__card {
-    height: 14.5rem;
-  }
-
   .restaurantmenu {
     display: flex;
     flex-direction: row;
