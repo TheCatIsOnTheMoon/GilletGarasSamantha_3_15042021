@@ -770,6 +770,7 @@ header a {
     position: relative;
     bottom: -0.15rem;
     height: auto;
+    max-height: 48rem;
     margin-top: 1rem;
   }
   .restaurantmenu__presentation__title {
