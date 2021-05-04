@@ -432,18 +432,21 @@ body {
   font-weight: bold;
   font-size: 0.9rem;
   opacity: 1;
+  font-family: Roboto;
 }
 
 :-ms-input-placeholder {
   color: #333333;
   font-weight: bold;
   font-size: 0.9rem;
+  font-family: Roboto;
 }
 
 ::placeholder {
   color: #333333;
   font-weight: bold;
   font-size: 0.9rem;
+  font-family: Roboto;
 }
 
 .presentation {
