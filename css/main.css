@@ -503,11 +503,11 @@ body {
   background-color: #9356DC;
   border-radius: 50%;
   color: white;
-  font-size: 0.6em;
+  font-size: 0.8em;
   height: 1.3rem;
   width: 1.3rem;
   text-align: center;
-  padding-top: 0.4rem;
+  padding-top: 0.3rem;
   position: relative;
   left: -0.6rem;
 }
