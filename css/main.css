@@ -182,7 +182,7 @@ body {
   color: white;
   cursor: pointer;
   white-space: nowrap;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
   width: 13rem;
   margin: 0 auto;
@@ -399,7 +399,7 @@ body {
 }
 .footer__links a {
   color: white;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 400;
 }
 .footer__links a:hover {
@@ -512,8 +512,8 @@ body {
   left: -0.6rem;
 }
 .howdoesitwork__step__icon {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.7rem;
+  height: 1.8rem;
   padding-top: 0.5rem;
   margin: auto 0.6rem auto 0.4rem;
   position: relative;
