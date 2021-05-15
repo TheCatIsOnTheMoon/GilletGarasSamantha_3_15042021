@@ -512,18 +512,25 @@ body {
   left: -0.6rem;
 }
 .howdoesitwork__step__icon {
-  width: 1.7rem;
+  width: 1.3rem;
   height: 1.8rem;
   padding-top: 0.5rem;
-  margin: auto 0.6rem auto 0.4rem;
+  margin: auto 0.9rem auto 0.4rem;
   position: relative;
-  top: 0.15rem;
+  top: 0.35rem;
+}
+.howdoesitwork__step svg {
+  color: #9e9e9e;
 }
 .howdoesitwork__step + .howdoesitwork__step {
   margin-top: 1.3rem;
 }
 .howdoesitwork__step:hover {
   background-color: rgba(144, 88, 218, 0.2);
+  transition: 0.3s;
+}
+.howdoesitwork__step:hover > svg {
+  color: #9356DC;
   transition: 0.3s;
 }
 

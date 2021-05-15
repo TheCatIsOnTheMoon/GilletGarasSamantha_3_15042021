@@ -103,12 +103,16 @@
     }
 
     &__icon {
-      width: 1.7rem;
+      width: 1.3rem;
       height: 1.8rem;
       padding-top: 0.5rem;
-      margin: auto 0.6rem auto 0.4rem;
+      margin: auto 0.9rem auto 0.4rem;
       position: relative;
-      top: 0.15rem;
+      top: 0.35rem;
+    }
+
+    & svg {
+      color: #9e9e9e;
     }
   }
 
@@ -118,6 +122,11 @@
 
   &__step:hover {
     background-color: $color_primary--lighter;
+    transition: 0.3s;
+  }
+
+  &__step:hover > svg {
+    color: $color_primary;
     transition: 0.3s;
   }
 }
