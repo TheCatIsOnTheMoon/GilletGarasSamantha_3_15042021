@@ -707,7 +707,7 @@ header a {
 }
 .restaurantmenu__order__btn {
   width: auto;
-  padding: 0.9rem 2rem;
+  padding: 0.9rem 2.5rem;
 }
 
 @media (min-width: 1024px) {
