@@ -585,6 +585,10 @@ body {
   margin-bottom: 0.5rem;
 }
 
+header {
+  position: relative;
+}
+
 header a {
   width: 1.5rem;
   position: absolute;
@@ -813,6 +817,12 @@ header a {
 
   .howdoesitwork__step {
     font-size: 0.8rem;
+  }
+}
+@media (min-width: 1500px) {
+  body {
+    max-width: 1500px;
+    margin: auto;
   }
 }
 

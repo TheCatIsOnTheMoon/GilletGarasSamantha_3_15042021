@@ -8,9 +8,6 @@
     padding: 2rem;
   }
 
-  .presentation {
-  }
-
   .howdoesitwork {
     padding-top: 1rem;
     padding-bottom: 3rem;
@@ -46,10 +43,6 @@
 
     & a {
       width: 23%;
-    }
-
-    &__card {
-      // height: 14.5rem;
     }
   }
   // page-restaurant
@@ -115,5 +108,13 @@
 
   .howdoesitwork__step {
     font-size: 0.8rem;
+  }
+}
+
+// Super wide screens comfort
+@media (min-width: 1500px) {
+  body {
+    max-width: 1500px;
+    margin: auto;
   }
 }
