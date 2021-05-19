@@ -797,5 +797,23 @@ header a {
     padding-top: 0;
   }
 }
+@media (max-width: 334px) {
+  .location {
+    padding: 5% 0 5% 0;
+  }
+  .location__entry {
+    padding-left: 3rem;
+  }
+  .location__entry__icon {
+    margin-left: 0.6rem;
+  }
+  .location__entry__input {
+    margin-left: 0.1rem;
+  }
+
+  .howdoesitwork__step {
+    font-size: 0.8rem;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
